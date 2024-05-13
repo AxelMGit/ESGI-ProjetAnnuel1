@@ -1,5 +1,5 @@
 body {
-    background-image: url('../Projet_Forum/img/bg2.jpeg');
+    background-image: url('img/bg2.jpeg');
     background-size: 100% auto; /* Pour que l'image couvre toute la largeur et ajuste automatiquement la hauteur */
     background-position: center auto; /* Pour centrer l'image horizontalement et la déplacer vers le bas de 50 pixels */
     background-repeat: no-repeat; /* Pour éviter la répétition de l'image */

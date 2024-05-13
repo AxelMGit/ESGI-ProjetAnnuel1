@@ -22,7 +22,7 @@
         <div class="navbar-item-inner-icon-wrapper flexbox">
           <ion-icon name="search-outline"></ion-icon>
         </div>
-        <span class="link-text">Search</span>
+        <span class="link-text">Recherche</span>
       </a>
     </li>
     <li class="navbar-item flexbox-left">
@@ -30,7 +30,7 @@
         <div class="navbar-item-inner-icon-wrapper flexbox">
           <ion-icon name="home-outline"></ion-icon>
         </div>
-        <span class="link-text">Home</span>
+        <span class="link-text">Accueil</span>
       </a>
     </li>
     <li class="navbar-item flexbox-left">
@@ -38,7 +38,7 @@
         <div class="navbar-item-inner-icon-wrapper flexbox">
           <ion-icon name="folder-open-outline"></ion-icon>
         </div>
-        <span class="link-text">Projects</span>
+        <span class="link-text">Poster</span>
       </a>
     </li>
     <li class="navbar-item flexbox-left">
@@ -46,7 +46,7 @@
         <div class="navbar-item-inner-icon-wrapper flexbox">
           <ion-icon name="pie-chart-outline"></ion-icon>
         </div>
-        <span class="link-text">Dashboard</span>
+        <span class="link-text">Photos</span>
       </a>
     </li>
     <li class="navbar-item flexbox-left">
@@ -54,7 +54,7 @@
         <div class="navbar-item-inner-icon-wrapper flexbox">
           <ion-icon name="people-outline"></ion-icon>
         </div>
-        <span class="link-text">Team</span>
+        <span class="link-text">BlaBla</span>
       </a>
     </li>
     <li class="navbar-item flexbox-left">
@@ -62,7 +62,7 @@
         <div class="navbar-item-inner-icon-wrapper flexbox">
           <ion-icon name="chatbubbles-outline"></ion-icon>
         </div>
-        <span class="link-text">Support</span>
+        <span class="link-text">Nous contacter</span>
       </a>
     </li>
     <li class="navbar-item flexbox-left">
@@ -70,7 +70,7 @@
         <div class="navbar-item-inner-icon-wrapper flexbox">
           <ion-icon name="settings-outline"></ion-icon>
         </div>
-        <span class="link-text">Settings</span>
+        <span class="link-text">Profil</span>
       </a>
     </li>
   </ul>

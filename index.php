@@ -68,7 +68,7 @@
           </div>
         </div>
       </li>
-      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Nous contacter</a></li>
     </ul>
     <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
   </div>

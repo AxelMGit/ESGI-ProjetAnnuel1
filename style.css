@@ -1,9 +1,3 @@
-body {
-    background-image: url('img/bg2.jpeg');
-    background-size: 100% auto; /* Pour que l'image couvre toute la largeur et ajuste automatiquement la hauteur */
-    background-position: center auto; /* Pour centrer l'image horizontalement et la déplacer vers le bas de 50 pixels */
-    background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
-}
 
 .forum-name {
     margin: 0; 
@@ -137,6 +131,11 @@ html, body {
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
     box-sizing: border-box;
+
+    background-image: url('img/bg2.jpeg');
+    background-size: 100% auto; /* Pour que l'image couvre toute la largeur et ajuste automatiquement la hauteur */
+    background-position: center auto; /* Pour centrer l'image horizontalement et la déplacer vers le bas de 50 pixels */
+    background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
 }
 
 /* ============

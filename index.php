@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Ride Away</title>
 </head>
 <body>
+  <div class="bloc">
+    <video autoplay loop muted playsinline src="bgvideo.mp4"></video>
     <div class="page">
       <header tabindex="0"><a href="index.php">Ride Away</a></header>
         <div id="nav-container">

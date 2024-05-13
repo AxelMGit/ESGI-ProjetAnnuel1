@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forum Motard</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    
-        <?php include('connexionbase.php'); ?>
-        <header>
-    <!-- Ajout de la balise img pour le logo -->
-    <img src="../Projet_Forum/img/logo.png" alt="Logo du site" class="site-logo">
-    <!-- Classe pour le titre "Forum" -->
-    <h1 class="forum-name">Forum</h1>
-    <div class="login-buttons">
-        <a href="#" class="login-button">Connexion</a>
-        <a href="#" class="signup-button">Inscription</a>
-    </div>
-</header>
+    <div class="page">
+        <header tabindex="0"><a href="index.php">Ride Away</a></header>
+        <div id="nav-container">
+            <div class="bg"></div>
+            <div class="button" tabindex="0">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </div>
+            <div id="nav-content" tabindex="0">
+                <ul>
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="ajouter.php">Poster</a></li>
+                    <li><a href="#0">Photos</a></li>
+                    <li><a href="#0">BlaBla</a></li>
+                    <li><a href="#0">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
 
-<div class="border"></div> <!-- Element div pour la bordure -->
-<div class="nav">
-    <nav>
-        <a href="">Accueil</a>
-        <a href="ajouter.php">Poster</a>
-        <a href="#">Photos</a>
-    </nav>  
-</div>
+        <div class="login-buttons">
+            <a href="#" class="login-button">Connexion</a>
+            <a href="#" class="signup-button">Inscription</a>
+        </div>
+    </div>
         
     <div id="body2">
-        
-    <div class="carre-blanc">
         <form method="post" id="post">
             
                 <label for="title">Votre Titre:</label>
@@ -148,11 +147,7 @@
                 }
             }
 
-            ?>
-        
+            ?> 
     </div>
-
-
 </body>
-
 </html>

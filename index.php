@@ -8,7 +8,7 @@
 <body>
 
 <div class="page">
-  <header tabindex="0">Header</header>
+  <header tabindex="0">Ride Away</header>
   <div id="nav-container">
     <div class="bg"></div>
     <div class="button" tabindex="0">
@@ -18,14 +18,18 @@
     </div>
     <div id="nav-content" tabindex="0">
       <ul>
-        <li><a href="#0">Home</a></li>
-        <li><a href="#0">Services</a></li>
-        <li><a href="#0">Blog</a></li>
-        <li><a href="#0">About</a></li>
-        <li><a href="#0">Contact</a></li>
-        <li class="small"><a href="#0">Facebook</a><a href="#0">Instagram</a></li>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="#0">Poster</a></li>
+        <li><a href="#0">Photos</a></li>
+        <li><a href="#0">BlaBla</a></li>
+        <li><a href="#0">Nous contacter</a></li>
       </ul>
     </div>
+  </div>
+
+  <div class="login-buttons">
+    <a href="#" class="login-button">Connexion</a>
+    <a href="#" class="signup-button">Inscription</a>
   </div>
 
 <?php include('connexionbase.php'); ?>

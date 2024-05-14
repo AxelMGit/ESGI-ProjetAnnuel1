@@ -8,12 +8,10 @@
     <title>RideAway</title>
 </head>
 <body>
-
-
-
+    
+<?php include('connexionbase.php'); ?>
 
     <div class="page">
-      <header tabindex="0"><a href="index.php">RideAway</a></header>
         <div id="nav-container">
             <div class="bg"></div>
             <div class="button" tabindex="0">
@@ -23,14 +21,20 @@
             </div>
             <div id="nav-content" tabindex="0">
                 <ul>
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="ajouter.php">Poster</a></li>
-                    <li><a href="#0">BlaBla</a></li>
+                    <li><a href="index.php">Poster</a></li>
+                    <li><a href="ajouter.php">Forum</a></li>
                     <li><a href="#0">Entretiens</a></li>
-                    <li><a href="#0">Nous contacter</a></li>
+                    <li><a href="#0">GPS moto</a></li>
+                    <li><a href="#0">Contact</a></li>
                 </ul>
             </div>
         </div>
+
+        <div id="logo">
+    <a href="index.php">
+        <img src="img/logo.png" alt="logo">
+    </a>
+</div>
 
         <div class="login-buttons">
             <a href="login.php" class="login-button">Connexion</a>
@@ -38,19 +42,29 @@
 
         </div>
     </div>
-    
-    <div class="groupement-video">
 
-        <video class="background-video" preload="auto" autoplay loop muted>
-            <source src="img\videobg2.mp4" type="video/mp4">
-        </video>
-
-    </div>
-
-    <iframe id="chatbot" 
+    <!-- <iframe id="chatbot" 
             src="https://copilotstudio.microsoft.com/environments/Default-c371d4f5-b34f-4b06-9e66-517fed904220/bots/cr4c5_esgiProjetAnnuel1/webchat?__version__=2" 
             frameborder="0">
     </iframe>
+ -->
 
 </body>
 </html>
+
+<footer>
+<div class="footer">
+<div class="row">
+
+</div>
+
+<div class="row">
+<ul>
+<li><a href="#">L'application</a></li>
+<li><a href="#">Assistance</a></li>
+<li><a href="#">A propos de nous</a></li>
+<li><a href="#">Termes & Conditions</a></li>
+</ul> 
+</div>
+</div>
+</footer>

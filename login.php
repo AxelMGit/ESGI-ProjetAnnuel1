@@ -35,8 +35,8 @@ body{
 }
 .shape:first-child{
     background: linear-gradient(
-        #1845ad,
-        #23a2f6
+        #ffc82f,
+        #000000
     );
     left: -80px;
     top: -80px;
@@ -44,8 +44,8 @@ body{
 .shape:last-child{
     background: linear-gradient(
         to right,
-        #ff512f,
-        #f09819
+        #000000,
+        #ffc82f
     );
     right: -30px;
     bottom: -80px;
@@ -109,28 +109,7 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
-.social{
-  margin-top: 30px;
-  display: flex;
-}
-.social div{
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255,255,255,0.27);
-  color: #eaf0fb;
-  text-align: center;
-}
-.social div:hover{
-  background-color: rgba(255,255,255,0.47);
-}
-.social .fb{
-  margin-left: 25px;
-}
-.social i{
-  margin-right: 4px;
-}
+
 
     </style>
 </head>
@@ -140,19 +119,16 @@ button{
         <div class="shape"></div>
     </div>
     <form>
-        <h3>Login Here</h3>
+        <h3>Connection </h3>
 
-        <label for="username">Username</label>
+        <label for="username">Mail:</label>
         <input type="text" placeholder="Email or Phone" id="username">
 
-        <label for="password">Password</label>
+        <label for="password">Mot de passe :</label>
         <input type="password" placeholder="Password" id="password">
 
-        <button>Log In</button>
-        <div class="social">
-          <div class="go"><i class="fab fa-google"></i>  Google</div>
-          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
-        </div>
+        <button>se connecter</button>
+        
     </form>
 </body>
 </html>

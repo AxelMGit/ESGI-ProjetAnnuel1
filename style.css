@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600');
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
 .forum-name {
     margin: 0; 
 }
@@ -81,7 +87,7 @@ nav a {
 
 /* ////////////////////////////////ONGLETS NAVIGATION//////////////////////////// */
 
-@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600');
+
 
 * {
   outline: none;
@@ -328,8 +334,6 @@ img {
 
 /* //////////////////////////////////ANIMATION TITRE/////////////// */
 
-@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
-
 .h1-titre {
   font-size: calc(5px + 4vh);
   line-height: calc(20px + 20vh);
@@ -339,4 +343,12 @@ img {
   text-align: center;
   animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
+}
+
+#chatbot {
+  width: 50vh; 
+  height: 50vh; 
+  float: right;
+  margin-right: 10px;
+  padding-bottom: 10px;
 }

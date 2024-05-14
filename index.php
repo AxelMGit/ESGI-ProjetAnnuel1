@@ -30,7 +30,7 @@
         </div>
 
         <div class="login-buttons">
-            <a href="#" class="login-button">Connexion</a>
+            <a href="login.php" class="login-button">Connexion</a>
             <a href="#" class="signup-button">Inscription</a>
         </div>
     </div>

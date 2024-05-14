@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="page">
-        <header tabindex="0"><a href="index.php">Ride Away</a></header>
+        <header tabindex="0"><a href="index.php">RideAway</a></header>
         <div id="nav-container">
             <div class="bg"></div>
             <div class="button" tabindex="0">

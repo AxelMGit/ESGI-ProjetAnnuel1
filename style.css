@@ -16,7 +16,6 @@
     transform: translateX(-50%);
 }
 
-
 .login-buttons {
     position: absolute;
     top: 3%;
@@ -25,9 +24,9 @@
 
 .login-button {
     background-color: #000000;
-    color: #ffffff;
+    color: #ffc82f;
     padding: 10px 20px;
-    border: 1px solid rgb(255, 255, 255); 
+    border: 1px solid #ffc82f; 
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -40,7 +39,7 @@
 }
 
 .signup-button {
-    background-color: #ff0000;
+    background-color: #ffc82f;
     color: #ffffff;
     padding: 10px 20px;
     border: none; 
@@ -51,12 +50,14 @@
     margin-left: 10px;
 }
 
+.signup-button:hover {
+    opacity: 0.5;
+}
 
 .nav {
     position: absolute;
     top: 3%;
     right: 20%;
-    z-index: 10;
 }
 
 nav {
@@ -75,15 +76,6 @@ nav a {
     position: relative; /* Ajout de position relative pour référence */
 }
 
-.border {
-    position: absolute; /* Position absolue pour placer la bordure */
-    right: 0;
-    width: 100%;
-    height: 0.5px; /* Epaisseur de la bordure */
-    background-color: #171717; /* Couleur de la bordure */
-    margin: 20px 0; /* Espace autour de la bordure */
-    margin-top: 1%;
-}
 
 /* ////////////////////////////////ONGLETS NAVIGATION//////////////////////////// */
 
@@ -113,11 +105,13 @@ header {
   position: fixed;
   width: 100%;
   height: 70px;
-  background: #22313f;
+  background: #000000;
   color: #fff;
   justify-content: center;
   align-items: center;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  border-bottom: 1px solid white;
+  font-size: 35px;
 }
 
 main {
@@ -130,10 +124,6 @@ main {
 main > div {
   margin: auto;
   max-width: 600px;
-}
-
-main h2 span {
-  color: #BF7497;
 }
 
 main p {
@@ -197,6 +187,10 @@ main small {
   background: #aaa;
   transition: .3s;
 }
+.jaune {
+  background: #ffc82f;
+}
+
 .icon-bar + .icon-bar {
   margin-top: 5px;
 }
@@ -218,12 +212,12 @@ main small {
   margin-top: 70px;
   padding: 20px;
   width: 90%;
-  max-width: 300px;
+  max-width: 207px;
   position: absolute;
   top: 0;
   left: 0;
   height: calc(100% - 70px);
-  background: #ececec;
+  background: #edd75c;
   pointer-events: auto;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   transform: translateX(-100%);
@@ -279,7 +273,7 @@ main small {
 
 html, body {
   height: 100%;
-  background-color: #34495e;
+  background-color: #000000;
 }
 
 a,
@@ -352,3 +346,4 @@ img {
   margin-right: 10px;
   padding-bottom: 10px;
 }
+=======

@@ -12,7 +12,7 @@
 
 
     <div class="page">
-      <header tabindex="0"><a href="index.php">RideAway</a></header>
+      <header tabindex="0"><a class="h1-titre" href="index.php">RideAway</a></header>
         <div id="nav-container">
             <div class="bg"></div>
             <div class="button" tabindex="0">
@@ -24,8 +24,8 @@
                 <ul>
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="ajouter.php">Poster</a></li>
-                    <li><a href="#0">Photos</a></li>
                     <li><a href="#0">BlaBla</a></li>
+                    <li><a href="#0">Entretiens</a></li>
                     <li><a href="#0">Nous contacter</a></li>
                 </ul>
             </div>
@@ -40,17 +40,11 @@
     
     <div class="groupement-video">
 
-        <video class="background-video" preload="auto" loop muted>
-            <source src="img\videobg1.mp4" type="video/mp4">
-        </video>
-
         <video class="background-video" preload="auto" autoplay loop muted>
             <source src="img\videobg2.mp4" type="video/mp4">
         </video>
 
-        <video class="background-video" preload="auto" loop muted>
-            <source src="img\videobg3.mp4" type="video/mp4">
-        </video>
+    </div>
 
 </body>
 </html>

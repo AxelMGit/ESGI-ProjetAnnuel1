@@ -138,7 +138,29 @@ button:hover{
 
     </style>
 </head>
+
 <body>
+        <?php include('connexionbase.php'); ?>
+        <?php 
+
+            if(isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["prenom"]) && isset($_POST["prenom"])){
+                
+                $nom = $_POST["nom"];
+                $prenom = $_POST["prenom"];
+                $mail = $_POST["mail"];
+                $mdp = $_POST["mdp"];
+                $hashmdp = password_hash($mdp, PASSWORD_DEFAULT);
+
+                
+                $requete1 = 'INSERT INTO utilisateur(id_user, nom, prenom, email, mdp) VALUES (:nom, :prenom, :email,:mdp)';
+                $ex_requete1 = $pdo ->prepare($requete1);
+                $ex_requete1->execute([':nom' => $nom,':prenom'=> $prenom,':email'=> $mail,':mdp'=> $hashmdp]);
+                header('Location: index.php');
+                exit();
+
+
+            }
+        ?>
     <div class="page">
         <header tabindex="0"><a href="index.php">RideAway</a></header>
             <div id="nav-container">

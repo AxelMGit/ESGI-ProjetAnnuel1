@@ -34,7 +34,7 @@
 
         <div class="login-buttons">
             <a href="login.php" class="login-button">Connexion</a>
-            <a href="#" class="signup-button">Inscription</a>
+            <a href="signup.php" class="signup-button">Inscription</a>
 
         </div>
     </div>

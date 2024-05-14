@@ -1,13 +1,13 @@
 <html lang="en">
 <head>
   
-    <title>login</title>
+    <title>signup</title>
  
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
-
     <style media="screen">
       *,
 *:before,
@@ -37,7 +37,7 @@
         #f09819
     );
     
-    left: -80px;
+    left: -100px;
     top: -20px;
 }
 .shape:last-child{
@@ -47,16 +47,16 @@
         #f09819
     );
     
-    right: -30px;
-    bottom: -150px;
+    right: -110px;
+    bottom: -350px;
 }
 form{
-    height: 520px;
-    width: 400px;
+    height: auto;
+    width: 450px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 60%;
+    top: 73%;
     left: 50%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
@@ -138,7 +138,29 @@ button:hover{
 
     </style>
 </head>
+
 <body>
+        <?php include('connexionbase.php'); ?>
+        <?php 
+
+            if(isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["prenom"]) && isset($_POST["prenom"])){
+                
+                $nom = $_POST["nom"];
+                $prenom = $_POST["prenom"];
+                $mail = $_POST["mail"];
+                $mdp = $_POST["mdp"];
+                $hashmdp = password_hash($mdp, PASSWORD_DEFAULT);
+
+                
+                $requete1 = 'INSERT INTO utilisateur(id_user, nom, prenom, email, mdp) VALUES (:nom, :prenom, :email,:mdp)';
+                $ex_requete1 = $pdo ->prepare($requete1);
+                $ex_requete1->execute([':nom' => $nom,':prenom'=> $prenom,':email'=> $mail,':mdp'=> $hashmdp]);
+                header('Location: index.php');
+                exit();
+
+
+            }
+        ?>
     <div class="page">
         <header tabindex="0"><a href="index.php">RideAway</a></header>
             <div id="nav-container">
@@ -160,8 +182,8 @@ button:hover{
             </div>
 
             <div class="login-buttons">
+                <a href="login.php" class="login-button">Connexion</a>
                 
-                <a href="signup.php" class="signup-button">Inscription</a>
 
             </div>
     </div>
@@ -169,17 +191,21 @@ button:hover{
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form>
-        <h3>Connecter</h3>
-        
+    <form method="post">
+        <h3>Inscription</h3>
+        <label> Prénom :</label>
+        <input type="text" placeholder="---" name="prenom">
+
+        <label >Nom :</label>
+        <input type="text" placeholder="---" name="nom">
 
         <label >Mail :</label>
-        <input type="text" placeholder="Mail" name="" >
+        <input type="text" placeholder="example@mail.com" name="mail">
 
-        <label for="password">Mot de passe :</label>
-        <input type="password" placeholder="Mot de passe :" name="" >
+        <label>Mot de passe :</label>
+        <input type="password" placeholder="Mot de passe :" name="mdp">
 
-        <button>Se connecter</button>
+        <button type="submit">S'incrire</button>
        
     </form>
     

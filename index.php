@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="chatbot.js"></script>
     <title>RideAway</title>
 </head>
 <body>
 
-<?php include('connexionbase.php'); ?>
+
 
 
     <div class="page">
@@ -45,6 +46,11 @@
         </video>
 
     </div>
+
+    <iframe id="chatbot" 
+            src="https://copilotstudio.microsoft.com/environments/Default-c371d4f5-b34f-4b06-9e66-517fed904220/bots/cr4c5_esgiProjetAnnuel1/webchat?__version__=2" 
+            frameborder="0">
+    </iframe>
 
 </body>
 </html>

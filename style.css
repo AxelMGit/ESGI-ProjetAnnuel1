@@ -18,10 +18,10 @@
 }
 
 .login-button {
-    background-color: #171717;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
     padding: 10px 20px;
-    border: 1px solid white; 
+    border: 1px solid rgb(255, 255, 255); 
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -34,8 +34,8 @@
 }
 
 .signup-button {
-    background-color: #f4382d;
-    color: #fff;
+    background-color: #ff0000;
+    color: #ffffff;
     padding: 10px 20px;
     border: none; 
     border-radius: 10px;
@@ -50,6 +50,7 @@
     position: absolute;
     top: 3%;
     right: 20%;
+    z-index: 10;
 }
 
 nav {
@@ -78,12 +79,6 @@ nav a {
     margin-top: 1%;
 }
 
-.site-logo {
-    width: 70px; /* Largeur du logo */
-    height: auto; /* Hauteur ajustée automatiquement pour maintenir les proportions */
-    margin-left: 1%;
-}
-
 /* ////////////////////////////////ONGLETS NAVIGATION//////////////////////////// */
 
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600');
@@ -98,7 +93,8 @@ strong {
 
 .page {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  margin-bottom: 0px;
   background: #fdfdfd;
   font-family: 'Encode Sans Condensed', sans-serif;
   font-weight: 600;
@@ -111,7 +107,7 @@ header {
   position: fixed;
   width: 100%;
   height: 70px;
-  background: #212121;
+  background: #22313f;
   color: #fff;
   justify-content: center;
   align-items: center;
@@ -277,6 +273,7 @@ main small {
 
 html, body {
   height: 100%;
+  background-color: #34495e;
 }
 
 a,
@@ -310,19 +307,36 @@ img {
 
 /* /////////////////////////////////////////////////////////////////////// */
 
-.bloc {
+.background-video {
+  height: 70vh;
+  width: auto;
+  z-index: 1;
   position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
+  margin-top: 10%;
+  border: 1px solid white;
+  border-radius: 3%;
+  }
 
-.bloc video {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  z-index: -100;
-  transform: translate(-50%, -50%);
+
+.groupement-video {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  }
+
+/* //////////////////////////////////ANIMATION TITRE/////////////// */
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+.h1-titre {
+  font-size: calc(5px + 4vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #0400ff, 0 0 15px #0400ff, 0 0 20px #0400ff, 0 0 40px #0400ff, 0 0 60px #ffffff, 0 0 10px #0400ff, 0 0 98px #ffffff;
+    color: #ffffff;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
 }

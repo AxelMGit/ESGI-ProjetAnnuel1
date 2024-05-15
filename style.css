@@ -280,8 +280,9 @@ html, body {
   height: 100%;
   background-color: #000000;
   background-image: url('img/bg1.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: fixed;
   opacity: 95%;
 }
 
@@ -360,3 +361,8 @@ img {
     width: 9%;
 }
 
+
+
+/* boite dialog page signup/////////////////////////////////////// */
+
+  

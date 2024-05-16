@@ -139,31 +139,36 @@ button:hover{
     </style>
 </head>
 <body>
-    <div class="page">
-        <header tabindex="0"><a href="index.php">RideAway</a></header>
-            <div id="nav-container">
-                <div class="bg"></div>
-                <div class="button" tabindex="0">
-                    <span class="icon-bar jaune"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar jaune"></span>
-                </div>
-                <div id="nav-content" tabindex="0">
-                    <ul>
-                        <li><a href="index.php">Accueil</a></li>
-                        <li><a href="ajouter.php">Poster</a></li>
-                        <li><a href="#0">BlaBla</a></li>
-                        <li><a href="#0">Entretiens</a></li>
-                        <li><a href="#0">Nous contacter</a></li>
-                    </ul>
-                </div>
+<div class="page">
+        <div id="nav-container">
+            <div class="bg"></div>
+            <div class="button" tabindex="0">
+                <span class="icon-bar jaune"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar jaune"></span>
             </div>
-
-            <div class="login-buttons">
-                
-                <a href="signup.php" class="signup-button">Inscription</a>
-
+            <div id="nav-content" tabindex="0">
+                <ul>
+                    <li><a href="ajouter.php">Poster</a></li>
+                    <li><a href="#0">Forum</a></li>
+                    <li><a href="#0">Entretiens</a></li>
+                    <li><a href="#0">GPS moto</a></li>
+                    <li><a href="#0">Contact</a></li>
+                </ul>
             </div>
+        </div>
+
+        <div id="logo">
+    <a href="index.php">
+        <img src="img/logo.png" alt="logo">
+    </a>
+</div>
+
+        <div class="login-buttons">
+            <a href="login.php" class="login-button">Connexion</a>
+            <a href="signup.php" class="signup-button">Inscription</a>
+
+        </div>
     </div>
     <div class="background">
         <div class="shape"></div>

@@ -169,10 +169,8 @@ button:hover{
             <a href="signup.php" class="signup-button">Inscription</a>
 
         </div>
-    </div>
+        </div>
     <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
     </div>
     <form>
         <h3>Connecter</h3>

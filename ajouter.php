@@ -41,14 +41,6 @@
     <div id="body2">
         <form method="post" id="post">
             
-                <label for="title" class="input-label">Votre Titre :</label>
-                <input name="title" class="input-field">
-            
-            
-                <label for="title" class="input-label">Votre Publication :</label>
-                <input name="title" class="input-field">
-
-            
             <?php
             $requete = 'SELECT author.id aid, FirstName, LastName
                 FROM author;';

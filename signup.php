@@ -301,8 +301,6 @@ button:hover{
         </div>
     </div>
     <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
     </div>
     <form class="formsign" method="post" onsubmit="ouvrirBoiteDialogue(event)">
         <h3>Inscription</h3>
@@ -317,7 +315,7 @@ button:hover{
             <div class="formsign_droite">
 
                 <label >Mail :</label>
-                <input type="text" placeholder="example@mail.com" name="mail">
+                <input type="text" placeholder="exemple@mail.com" name="mail">
 
                 <label>Mot de passe :</label>
                 <input type="password" placeholder="Mot de passe :" name="mdp">

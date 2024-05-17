@@ -315,6 +315,8 @@ img {
   width: 100%;
 }
 
+
+/* //////////////STYLE CHATBOT/////////// */
 #chatbot {
   width: 50vh; 
   height: 50vh; 
@@ -361,98 +363,8 @@ img {
     width: 9%;
 }
 
-/* ///////////////////////////STYLE PAGE FORUM/////////// */
-
-/* Stylisation du formulaire */
-#post {
-  background-color: #000000;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 10%;
-  z-index: -1;
-}
-
-#post label {
-  display: block;
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-#post input[type="text"],
-#post select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-#post textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-#post input[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* Stylisation des publications */
-.post {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.post h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.post h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #888;
-}
-
-.post p {
-  font-size: 14px;
-  color: #555;
-}
-
-.post .actions {
-  margin-top: 10px;
-}
-
-.post .actions a {
-  color: #007bff;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.post .actions a:hover {
-  text-decoration: underline;
-}
-
-.input-label {
-  margin-top: 5%; /* Ajuste cette valeur selon tes préférences */
-}
-
-.input-field {
-  /* Styles pour les champs de saisie si nécessaire */
-}
-
-
-
 /* boite dialog page signup/////////////////////////////////////// */
 
-  
+/* ////////////////////////TEST CURSEUR/////////////// */
+
+/* ///////////////////////////ECRAN DACCUEIL///////////////////// */

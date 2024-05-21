@@ -17,13 +17,13 @@
     <?php
     
 
-    // Vérification du code de sécurité
+    
     if (isset($_POST["codeverif"])) {
         $verification_code = "123"; 
         
-        // Si le code de sécurité entré correspond au code attendu
+        
         if ($_POST["codeverif"] == $verification_code) {
-            // Enregistrement final en base de données
+            
             $nom = $_POST["nom"];
             $prenom = $_POST["prenom"];
             $email = $_POST["email"]; 
@@ -38,7 +38,7 @@
             header('Location: index.php');
             exit();
         } else {
-            // Afficher un message d'erreur ou réafficher la boîte de dialogue
+            
             echo "Le code de sécurité est incorrect. Veuillez réessayer.";
         }
     }

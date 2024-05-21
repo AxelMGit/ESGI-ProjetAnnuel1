@@ -17,28 +17,31 @@
     <?php
         
 
-        // Vérification si le code de sécurité est correct
+       
         if (isset($_POST["email"]) && isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["mdp"])) {
-            $nom = $_POST["nom"];
-            $prenom = $_POST["prenom"];
+            // $nom = $_POST["nom"];
+            // $prenom = $_POST["prenom"];
             $email = $_POST["email"]; 
-            $mdp = $_POST["mdp"];
-            $hashmdp = password_hash($mdp, PASSWORD_DEFAULT);
-            $verification_code = "123"; // Code de sécurité généré précédemment
+            // $mdp = $_POST["mdp"];
+            // $hashmdp = password_hash($mdp, PASSWORD_DEFAULT);
+            $verification_code = "123"; 
             
-            // Envoi de l'email de confirmation
+            
             $to = $email;
             $subject = 'Code de Verification';
-            $message = 'This is a test email message.';
-            $headers = 'From: lele23.meuret@gmail.com' . "\r\n" .
-                        'Reply-To: lele23.meuret@gmail.com' . "\r\n" .
-                        'X-Mailer: PHP/' . phpversion();
+            $message = 'Voici votre code de verification : ' . $verification_code;
+            $headers = "Content-Type: text/plain; charset=utf-8\r\n";
+            $headers .= "From: rideawaycontact@gmail.com\r\n";
+            
+           
+            if (mail($to, $subject, $message, $headers)) {
+                echo "Un email de vérification a été envoyé à $email.";
+            } else {
+                echo "L'envoi de l'email a échoué.";
+            }
+
 
             
-            mail($to, $subject, $message, $headers);
-
-            header('Location: confirmation.php');
-            exit();
             
         };        
     ?>
@@ -80,7 +83,7 @@
         <div class="shape"></div>
     </div>
     
-    <form class="formsign" method="post" action="confirmation.php" >
+    <form class="formsign" method="post">
         <h3>Inscription</h3>
         <div class= "formsign_row">
             <div class="formsign_gauche">

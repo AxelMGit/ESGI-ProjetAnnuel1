@@ -57,8 +57,8 @@
             </div>
             <div id="nav-content" tabindex="0">
                 <ul>
-                    <li><a href="index.php">Poster</a></li>
-                    <li><a href="ajouter.php">Forum</a></li>
+                    <li><a href="ajouter.php">Poster</a></li>
+                    <li><a href="#0">Forum</a></li>
                     <li><a href="#0">Entretiens</a></li>
                     <li><a href="#0">GPS moto</a></li>
                     <li><a href="#0">Contact</a></li>
@@ -79,8 +79,6 @@
     </div>
     
     <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
     </div>
     
     <form class="formsign" method="post">
@@ -96,7 +94,8 @@
             <div class="formsign_droite">
 
                 <label >Mail :</label>
-                <input type="text" placeholder="example@mail.com" name="email">
+
+                <input type="text" placeholder="exemple@mail.com" name="mail">
 
                 <label>Mot de passe :</label>
                 <input type="password" placeholder="Mot de passe :" name="mdp">

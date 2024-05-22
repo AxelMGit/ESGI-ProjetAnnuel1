@@ -21,8 +21,8 @@
             </div>
             <div id="nav-content" tabindex="0">
                 <ul>
-                    <li><a href="index.php">Poster</a></li>
-                    <li><a href="ajouter.php">Forum</a></li>
+                    <li><a href="ajouter.php">Poster</a></li>
+                    <li><a href="#0">Forum</a></li>
                     <li><a href="#0">Entretiens</a></li>
                     <li><a href="#0">GPS moto</a></li>
                     <li><a href="#0">Contact</a></li>
@@ -43,11 +43,11 @@
         </div>
     </div>
 
-    <!-- <iframe id="chatbot" 
-            src="https://copilotstudio.microsoft.com/environments/Default-c371d4f5-b34f-4b06-9e66-517fed904220/bots/cr4c5_esgiProjetAnnuel1/webchat?__version__=2" 
-            frameborder="0">
-    </iframe>
- -->
+    <!-- <iframe id="chatbot"  -->
+            <!-- src="https://copilotstudio.microsoft.com/environments/Default-c371d4f5-b34f-4b06-9e66-517fed904220/bots/cr4c5_esgiProjetAnnuel1/webchat?__version__=2"  -->
+            <!-- frameborder="0"> -->
+    <!-- </iframe> -->
+ 
 
 </body>
 </html>

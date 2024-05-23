@@ -101,11 +101,6 @@ strong {
   width: 100%;
   height: auto;
   margin-bottom: 0px;
-<<<<<<< Updated upstream
-  
-=======
- 
->>>>>>> Stashed changes
   font-family: 'Encode Sans Condensed', sans-serif;
   font-weight: 600;
   letter-spacing: .03em;
@@ -280,7 +275,7 @@ main small {
   padding: 0;
 }
 
-html, body {
+html, body.accueil {
   height: 100%;
   background-color: #000000;
   background-image: url('img/bg1.jpg');
@@ -289,6 +284,7 @@ html, body {
   background-position: fixed;
   opacity: 95%;
 }
+
 
 a,
 a:visited,
@@ -371,4 +367,32 @@ img {
 
 /* ////////////////////////TEST CURSEUR/////////////// */
 
-/* ///////////////////////////ECRAN DACCUEIL///////////////////// */
+/* ///////////////////////////ECRAN DACCUEIL/////////////////
+
+/* Ajouts pour le design du forum et du compteur de personnes connectées */
+
+/* Style du nom du forum */
+/* Style du nom du forum */
+.forum-name {
+  margin: 0;
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Style du compteur de personnes connectées */
+#connected-users {
+  position: absolute;
+  top: 10px;
+  right: 10%; /* Ajustez la position selon vos préférences */
+  color: #ffffff;
+  font-size: 16px;
+}
+
+#connected-users strong {
+  font-size: 20px;
+}
+
+

@@ -15,10 +15,14 @@
 <body>
     <?php include('connexionbase.php'); ?>
     <?php
+        use PHPMailer\PHPMailer\PHPMailer;
         
+        require 'path/to/PHPMailer/vendor/phpmailer/phpmailer/src/Exception.php';
+        require 'path/to/PHPMailer/vendor/phpmailer/phpmailer/src/PHPMailer.php';
+        require 'path/to/PHPMailer/vendor/phpmailer/phpmailer/src/SMTP.php';
 
        
-        if (isset($_POST["email"]) && isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["mdp"])) {
+        if (isset($_POST["mail"]) && isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["mdp"])) {
             $email = $_POST["email"];
             $verification_code = "123"; 
             
@@ -31,38 +35,45 @@
             $mail->Username = 'rideawaycontact@gmail.com';
             $mail->Password = 'ClementAxelLeo';
 
+
+
+
+
+            $subject = 'code';
+            $message = 'testestestestestes';
+            $headers = 'rideawaycontact@gmail.com' . "\r\n" .
+                'Reply-To: rideawaycontact@gmail.com' . "\r\n" .
+                'X-Mailer: PHP/' . phpversion();
+
+            // Création de l'objet PHPMailer
+            require_once('../../PHPMailer/vendor/autoload.php');
+            $mail = new PHPMailer();
+            
+
+            // Ajout du content type pour le mail
+            $mail->isHTML(true);
+
+            // Configuration de l'email à envoyer
+            $mail->setFrom('rideawaycontact@gmail.com', 'RideAway');
+            $mail->addReplyTo('rideawaycontact@gmail.com', 'RideAway');
+            $mail->addAddress($email);
+            $mail->Subject = $subject;
+            $mail->Body = $message;
+            $mail->addCustomHeader('Return-Path', 'rideawaycontact@gmail.com');
+            
+
+            // Envoi de l'email
+            if (!$mail->send()) {
+                echo 'Erreur lors de l\'envoi du message : ' . $mail->ErrorInfo;
+            } else {
+                echo 'L\'alerte pour les absences a bien été envoyée par mail.';
+            };
+
+
         };       
         
         
-        $subject = 'code';
-        $message = 'testestestestestes';
-        $headers = 'rideawaycontact@gmail.com' . "\r\n" .
-            'Reply-To: rideawaycontact@gmail.com' . "\r\n" .
-            'X-Mailer: PHP/' . phpversion();
-
-        // Création de l'objet PHPMailer
-        require_once('../../PHPMailer/vendor/autoload.php');
-        $mail = new PHPMailer();
         
-
-        // Ajout du content type pour le mail
-        $mail->isHTML(true);
-
-        // Configuration de l'email à envoyer
-        $mail->setFrom('rideawaycontact@gmail.com', 'RideAway');
-        $mail->addReplyTo('rideawaycontact@gmail.com', 'RideAway');
-        $mail->addAddress($email);
-        $mail->Subject = $subject;
-        $mail->Body = $message;
-        $mail->addCustomHeader('Return-Path', 'rideawaycontact@gmail.com');
-        
-
-        // Envoi de l'email
-        if (!$mail->send()) {
-            echo 'Erreur lors de l\'envoi du message : ' . $mail->ErrorInfo;
-        } else {
-            echo 'L\'alerte pour les absences a bien été envoyée par mail.';
-        }
 
     ?>
     

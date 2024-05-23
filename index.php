@@ -34,20 +34,18 @@
     <a href="index.php">
         <img src="img/logo.png" alt="logo">
     </a>
-</div>
+        </div>
 
         <div class="login-buttons">
             <a href="login.php" class="login-button">Connexion</a>
             <a href="signup.php" class="signup-button">Inscription</a>
 
         </div>
-    </div>
 
     <!-- <iframe id="chatbot"  -->
             <!-- src="https://copilotstudio.microsoft.com/environments/Default-c371d4f5-b34f-4b06-9e66-517fed904220/bots/cr4c5_esgiProjetAnnuel1/webchat?__version__=2"  -->
             <!-- frameborder="0"> -->
     <!-- </iframe> -->
- 
 
 </body>
 </html>
@@ -60,10 +58,10 @@
 
 <div class="row">
 <ul>
-<li><a href="#">L'application</a></li>
-<li><a href="#">Assistance</a></li>
+<li><a href="application.html">L'application</a></li>
+<li><a href="contact.html">Assistance</a></li>
 <li><a href="#">A propos de nous</a></li>
-<li><a href="#">Termes & Conditions</a></li>
+<li><a href="termes_conditions.html">Termes & Conditions</a></li>
 </ul> 
 </div>
 </div>

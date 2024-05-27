@@ -1,6 +1,6 @@
 <?php
 $SQLhost = 'localhost';
-$SQLpass= '';
+$SQLpass= 'root';
 $SQLlogin= 'root';
 $SQLdb= 'tpblog';
 ?>

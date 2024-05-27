@@ -468,3 +468,78 @@ img {
 .terms-logo {
   margin-left: -50px; /* Déplacement vers la gauche */
 }
+=======
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+#buttonposter{
+    
+  display: flex;
+  justify-content: end;
+  justify-content: space-evenly;
+  margin-top: 15%;
+
+
+}
+#body2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#post{
+  
+  border: 2px solid;
+  border-color: black;
+  border-radius: 5px;
+  width: 80%;
+  background-color: #919191;
+  color: white;
+  margin: 0.5%;
+  text-align: left;
+  word-wrap : break-word; 
+}
+
+#postcom{
+  
+  border: 2px solid;
+  border-color: black;
+  border-radius: 5px;
+  width: 70%;
+  background-color: #bdbaba;
+  color: white;
+  margin: 0.5%;
+  text-align: left;
+  word-wrap : break-word; 
+}
+
+
+
+.h2 {
+  text-align: center;
+  text-decoration: dashed;
+  display: inline;
+}
+.h3 {
+  text-align: left;
+  display: inline;
+  
+}
+
+.p{
+  text-align: end;
+}
+
+.pcom{
+  text-align: center;
+}
+.h4 {
+  text-align: center;
+  
+  
+}
+.h4b {
+  text-align: center;
+  justify-content: center;
+  
+}

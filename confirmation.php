@@ -13,38 +13,42 @@
 </head>
 
 <body>
-    <?php include('connexionbase.php'); ?>
-    <?php
+    <?php include('connexionbase.php'); 
+    
     
 
     
     if (isset($_POST["codeverif"])) {
-        $verification_code = "123"; 
+         
+        session_start();
+
         
-        
-        if ($_POST["codeverif"] == $verification_code) {
+        if (isset($_SESSION['verifcode'])) {
+            $code = $_SESSION['verifcode'];
+        };
+
+
+        if ($_POST["codeverif"] == $code) {
             
-            $nom = $_POST["nom"];
-            $prenom = $_POST["prenom"];
-            $email = $_POST["email"]; 
-            $mdp = $_POST["mdp"];
-            $hashmdp = password_hash($mdp, PASSWORD_DEFAULT);
+            $nom = $_SESSION['nom'];
+            $prenom = $_SESSION['prenom'];
+            $email = $_SESSION['email']; 
+            $mdp = $_SESSION['mdp'];
+           
 
             $requete1 = 'INSERT INTO utilisateur(nom, prenom, `mail`, mdp) VALUES (:nom, :prenom, :email, :mdp)';
             $ex_requete1 = $pdo->prepare($requete1);
-            $ex_requete1->execute([':nom' => $nom, ':prenom'=> $prenom, ':email'=> $email, ':mdp'=> $hashmdp]);
-            
-            
+            $ex_requete1->execute([':nom' => $nom, ':prenom'=> $prenom, ':email'=> $email, ':mdp'=> $mdp]);
             header('Location: index.php');
             exit();
         } else {
             
             echo "Le code de sécurité est incorrect. Veuillez réessayer.";
         }
-    }
+    };
 ?>
     
-    ?>
+   
     <div class="page">
         <div id="nav-container">
             <div class="bg"></div>
@@ -76,10 +80,7 @@
 
         </div>
     </div>
-    <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
+    
     
     
 
@@ -109,29 +110,5 @@
             
     </dialog>
 
-    <script>
-            function ouvrirBoiteDialogue(event, idAuditeur) {
-                event.preventDefault(); 
-
-                
-                
-                var maBoiteDeDialogue = document.getElementById('maBoiteDeDialogue');
-                maBoiteDeDialogue.showModal();
-
-                var boutonFermer = document.getElementById('fermerDialogue');
-
-               
-                boutonFermer.addEventListener('click', function() {
-                    maBoiteDeDialogue.close();
-                    window.location.reload();
-                });
-                
-            }
-            
-            
-    </script>
-    
-    
-    
 </body>
 </html>

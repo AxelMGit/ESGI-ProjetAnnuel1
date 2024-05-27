@@ -311,8 +311,6 @@ img {
   float: right;
   margin-right: 10px;
   padding-bottom: 10px;
-  margin-top: 18.1%;
-  margin-right: 0;
 }
 
 
@@ -544,4 +542,4 @@ img {
   text-align: center;
   justify-content: center;
   
-}
+};

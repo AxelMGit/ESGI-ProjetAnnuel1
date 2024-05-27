@@ -107,18 +107,6 @@ strong {
   color: #ffffff;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  background: #000000;
-  color: #fff;
-  font-size: 35px;
-  z-index: 1;
-}
-
 main {
   padding: 70px 20px 0;
   display: flex;
@@ -363,12 +351,6 @@ img {
     width: 9%;
 }
 
-/* boite dialog page signup/////////////////////////////////////// */
-
-/* ////////////////////////TEST CURSEUR/////////////// */
-
-/* ///////////////////////////ECRAN DACCUEIL/////////////////
-
 /* Ajouts pour le design du forum et du compteur de personnes connectées */
 
 /* Style du nom du forum */
@@ -395,7 +377,98 @@ img {
   font-size: 20px;
 }
 
+/* style page application//////////////////////////////////////// */
 
+/* Styles pour la section de l'application */
+.application {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.application h1 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.loader-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 20px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #aa0000;
+  animation: loading 3s infinite;
+}
+
+@keyframes loading {
+  0% {
+      width: 0;
+  }
+  50% {
+      width: 100%;
+  }
+  100% {
+      width: 0;
+  }
+}
+
+.application p {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* //////////////STYLE PAGE TERMES & CONDITIONS//////// */
+
+.terms {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.terms h1 {
+  color: #1db954;
+  text-align: center;
+}
+
+.terms h2 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.terms p {
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Style pour les liens dans la section .terms */
+.terms a {
+  color: blue; /* Couleur bleue pour les adresses e-mail */
+  text-decoration: none; /* Pour enlever le soulignement par défaut des liens */
+}
+
+.terms a:hover {
+  text-decoration: underline; /* Ajouter un soulignement au survol */
+}
+
+.terms-logo {
+  margin-left: -50px; /* Déplacement vers la gauche */
+}
+=======
 
 /* /////////////////////////////////////////////////////////////////////// */
 
@@ -470,5 +543,3 @@ img {
   justify-content: center;
   
 }
-
-

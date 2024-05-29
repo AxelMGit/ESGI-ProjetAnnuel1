@@ -84,7 +84,7 @@
             if (!$mail->send()) {
                 echo 'Erreur lors de l\'envoi du message : ' . $mail->ErrorInfo;
             } else {
-                header('Location: confirmation.php');
+                header('Location: confirmationsignup.php');
                 exit();
             };
 
@@ -122,11 +122,7 @@
         </a>
     </div>
 
-    <div class="login-buttons">
-        <a href="login.php" class="login-button">Connexion</a>
-        <a href="signup.php" class="signup-button">Inscription</a>
-
-    </div>
+    
     
     <div class="background">
     </div>

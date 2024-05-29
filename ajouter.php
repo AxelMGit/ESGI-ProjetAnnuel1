@@ -19,7 +19,12 @@
     </script>
 </head>
 <body>
-    <?php include('connexionbase.php'); ?>
+    <?php include('connexionbase.php'); 
+    session_start();
+    if (!isset($_SESSION['id_user'])) {
+        header('Location: index.php'); 
+        exit();
+    }?>
     <header>
         <div id="logo">
             <a href="index.php">

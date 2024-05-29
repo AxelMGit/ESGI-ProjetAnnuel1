@@ -25,7 +25,6 @@
                     <li><a href="ajouter.php">Forum</a></li>
                     <li><a href="#0">Entretiens</a></li>
                     <li><a href="#0">GPS moto</a></li>
-                    <li><a href="#0">Contact</a></li>
                 </ul>
             </div>
         </div>

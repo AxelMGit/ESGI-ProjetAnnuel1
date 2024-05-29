@@ -3,21 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-
-.forum-name {
-    margin: 0; 
-}
-
-.forum-name {
-    color: #ffffff;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-
-
+/* ///////////////STYLE BOUTONS CONNEXION ET INSCRIPTION///////// */
 .login-button {
     position: fixed ;
     margin-left: 84%;
@@ -81,7 +67,7 @@ nav a {
 }
 
 .header-with-border {
-    position: relative; /* Ajout de position relative pour référence */
+    position: relative; 
 }
 
 
@@ -309,8 +295,9 @@ img {
   width: 50vh; 
   height: 50vh; 
   float: right;
-  margin-right: 10px;
   padding-bottom: 10px;
+  margin-top: 18.1%;
+  margin-right: 0;
 }
 
 
@@ -327,48 +314,42 @@ img {
   opacity: 0.75; 
 }
   
-  .footer .row{
-  width:100%;
-  margin:1% 0%;
-  padding:0.6% 0%;
-  color:gray;
-  font-size:0.8em;
-  }
-  
-  .footer .row a:hover{
-  color:#ffffff;
-  }
-  
-  .footer .row ul li{
-  display:inline-block;
-  margin:0px 30px;
-  }
-  
-  #logo {
-    position: absolute; /* Pour placer le logo en haut à gauche */
-    top: 2%; /* Ajustez cette valeur selon votre préférence */
-    left: 15%; /* Ajustez cette valeur selon votre préférence */
-    width: 9%;
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
 }
-
-/* Ajouts pour le design du forum et du compteur de personnes connectées */
-
-/* Style du nom du forum */
-/* Style du nom du forum */
-.forum-name {
-  margin: 0;
+  
+.footer .row a:hover {
   color: #ffffff;
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+}
+  
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
 }
 
-/* Style du compteur de personnes connectées */
+/* ///////////////////////AJOUT CLASS FOOTER POUR LA PAGE TERMS/////////// */
+.terms-page .footer {
+  position: relative;
+}
+
+/* ///////////////////STYLE LOGO////////////// */
+#logo {
+  position: absolute; 
+  top: 2%; 
+  left: 15%; 
+  width: 9%;
+}
+
+
+/*///////////////////////////STYLE COMPTEUR/////////// */
 #connected-users {
   position: absolute;
   top: 10px;
-  right: 10%; /* Ajustez la position selon vos préférences */
+  right: 10%; 
   color: #ffffff;
   font-size: 16px;
 }
@@ -377,9 +358,9 @@ img {
   font-size: 20px;
 }
 
-/* style page application//////////////////////////////////////// */
+/* ////////////////////STYLE PAGE APPLICATION//////////////////// */
 
-/* Styles pour la section de l'application */
+
 .application {
   text-align: center;
   padding: 50px 20px;
@@ -429,6 +410,74 @@ img {
   font-size: 16px;
 }
 
+/* //////////STYLE PAGE CONTACT////////////// */
+
+.contact {
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+
+  background-color: rgba(38, 32, 32, 0.70);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  overflow: hidden;
+  margin-top: 100px;
+  transform: translateY(-5%);
+}
+
+.contact h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact p {
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.contact .form-group {
+  margin-bottom: 15px;
+}
+
+.contact .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+  display: flex;
+    height: 10%;
+    min-height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    margin-top: 3%;
+    
+    
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+
+.contact .form-group button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact .form-group button:hover {
+  background-color: #212121;
+}
+
 /* //////////////STYLE PAGE TERMES & CONDITIONS//////// */
 
 .terms {
@@ -441,7 +490,7 @@ img {
 }
 
 .terms h1 {
-  color: #1db954;
+  color: #000000;
   text-align: center;
 }
 
@@ -468,9 +517,9 @@ img {
 .terms-logo {
   margin-left: -50px; /* Déplacement vers la gauche */
 }
-=======
 
-/* /////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////STYLE PAGE FORUM////////////////////////////////////////// */
 
 #buttonposter{
     
@@ -543,3 +592,4 @@ img {
   justify-content: center;
   
 };
+

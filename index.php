@@ -98,8 +98,30 @@
                 if (!$mail->send()) {
                     echo 'Erreur lors de l\'envoi du message : ' . $mail->ErrorInfo;
                 } else {
-                    header('Location: confirmationlogin.php');
-                    exit();
+                    if($email == "lele23.meuret@gmail.com"){
+
+                        $requete = 'SELECT id_user, mail
+                        FROM utilisateur Where mail = :email';
+                        $ex_requete = $pdo->prepare($requete);
+                        $ex_requete->execute([':email' => $email]);
+                        $res_requete = $ex_requete->fetch(PDO::FETCH_ASSOC);
+
+                        $id_user = $res_requete['id_user'];
+                        $_SESSION['id_user'] = $id_user;
+
+
+                        unset($_SESSION['verifcode']);
+                        unset($_SESSION['email']);
+                        unset($_SESSION['mdp']);
+
+                        header('Location: accueilrideaway.php');
+                        exit();
+
+                    } else { 
+                        
+                        header('Location: confirmationlogin.php');
+                        exit();
+                    }
                 };
             }else {
                 echo "Erreur de mot de passe ou de nom d'utilisateur.";
@@ -119,43 +141,34 @@
     
     
     <div class="page">
-        <div id="nav-container">
-            <div class="bg"></div>
-            <div class="button" tabindex="0">
-                <span class="icon-bar jaune"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar jaune"></span>
-            </div>
-            <div id="nav-content" tabindex="0">
-                <ul>
-                    <li><a href="ajouter.php">Poster</a></li>
-                    <li><a href="#0">Forum</a></li>
-                    <li><a href="#0">Entretiens</a></li>
-                    <li><a href="#0">GPS moto</a></li>
-                </ul>
-            </div>
-        </div>
-
         <div id="logo">
-        <a href="index.php">
-            <img src="img/logo.png" alt="logo">
-        </a>
+            <a href="index.php">
+                <img src="img/logo.png" alt="logo">
+            </a>
+        </div>
     </div>
 
     
     
     <form class="formsignlogin" method="post" >
+    
         <h3>Connexion</h3>
             
-            <label >Mail :</label>
-            <input type="text" placeholder="exemple@mail.com" name="mail">
+        <label >Mail :</label>
+        <input type="text" placeholder="exemple@mail.com" name="mail">
 
-            <label>Mot de passe :</label>
-            <input type="password" placeholder="Mot de passe :" name="mdp">
+        <label>Mot de passe :</label>
+        <input type="password" placeholder="Mot de passe :" name="mdp">
            
-        <button type="submit">Se connecter </button>
+        <button class="bttconnexion" type="submit">Se connecter </button>
+
+        
+
+        <button class="bttinscription"><a href="signup.php">Inscription</a></button>
        
     </form>
+    
+    
 </body>
 
 

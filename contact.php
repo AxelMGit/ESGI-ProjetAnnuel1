@@ -6,42 +6,20 @@
     <title>Page de Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="contact-page">
+<body>
 
-<?php include('connexionbase.php'); ?>
+    <?php include('connexionbase.php'); ?>
 
-<div class="page">
-        <div id="nav-container">
-            <div class="bg"></div>
-            <div class="button" tabindex="0">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </div>
-            
-            <div id="nav-content" tabindex="0">
-                <ul>
-                    <li><a href="#0">Poster</a></li>
-                    <li><a href="ajouter.php">Forum</a></li>
-                    <li><a href="#0">Entretiens</a></li>
-                    <li><a href="#0">GPS moto</a></li>
-                </ul>
-            </div>
-        </div>
-</div>
-
-    <header>
-        <div id="logo" class="contact-logo">
-            <a href="index.php">
-                <img src="img/logo.png" alt="logo">
-            </a>
-        </div>
-    </header>
     
-    <section class="contact">
+    <?php include('navbar.php'); ?>
+    
+
+   
+    
+    <div class="contact">
         <h1>Contactez-nous</h1>
         <p>Nous serions ravis de répondre à vos questions et d'entendre vos suggestions. Veuillez remplir le formulaire ci-dessous pour nous contacter.</p>
-        <br>
+            <br>
         <form action="submit_contact.php" method="post">
             <div class="form-group">
                 <label for="name">Nom :</label>
@@ -59,7 +37,7 @@
                 <button type="submit">Envoyer</button>
             </div>
         </form>
-    </section>
+    </div>
 
     <footer>
         <div class="footer">

@@ -79,16 +79,12 @@
         </div>
 
         <div id="logo">
-    <a href="index.php">
-        <img src="img/logo.png" alt="logo">
-    </a>
-</div>
-
-        <div class="login-buttons">
-            <a href="login.php" class="login-button">Connexion</a>
-            <a href="signup.php" class="signup-button">Inscription</a>
-
+            <a href="index.php">
+                <img src="img/logo.png" alt="logo">
+            </a>
         </div>
+
+        
     </div>
     
     

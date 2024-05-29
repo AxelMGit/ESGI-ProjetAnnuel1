@@ -29,17 +29,24 @@
 
 
         if ($_POST["codeverif"] == $code) {
-            
-            $nom = $_SESSION['nom'];
-            $prenom = $_SESSION['prenom'];
             $email = $_SESSION['email']; 
-            $mdp = $_SESSION['mdp'];
+            
            
+            $requete = 'SELECT id_user, mail
+            FROM utilisateur Where mail = :email';
+            $ex_requete = $pdo->prepare($requete);
+            $ex_requete->execute([':email' => $email]);
+            $res_requete = $ex_requete->fetch(PDO::FETCH_ASSOC);
 
-            $requete1 = 'INSERT INTO utilisateur(nom, prenom, `mail`, mdp) VALUES (:nom, :prenom, :email, :mdp)';
-            $ex_requete1 = $pdo->prepare($requete1);
-            $ex_requete1->execute([':nom' => $nom, ':prenom'=> $prenom, ':email'=> $email, ':mdp'=> $mdp]);
-            header('Location: index.php');
+            $id_user = $res_requete['id_user'];
+            $_SESSION['id_user'] = $id_user;
+
+
+            unset($_SESSION['verifcode']);
+            unset($_SESSION['email']);
+            unset($_SESSION['mdp']);
+
+            header('Location: accueilrideaway.php');
             exit();
         } else {
             

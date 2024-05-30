@@ -26,67 +26,79 @@
 
        
         if (isset($_POST["mail"]) && isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["mdp"])) {
-            
-            try {
-                $mail = new PHPMailer();
-                echo "PhpMailer bien utilisé";
-    
-            } catch (Exception $e) {
-                $e->getMessage();
-            }
-            $nom = $_POST["nom"];
-            $prenom = $_POST["prenom"];
-            $email = $_POST["mail"];
-            $mdp = $_POST["mdp"];
-            $hashmdp = password_hash($mdp, PASSWORD_DEFAULT);
+            $requete = 'SELECT mail, mdp
+            FROM utilisateur Where mail = :email';
+            $ex_requete = $pdo->prepare($requete);
+            $ex_requete->execute([':email' => $_POST["mail"]]);
+            $res_requete = $ex_requete->fetch(PDO::FETCH_ASSOC);
 
-            session_start();
+            $emailbase = $res_requete['mail'];
 
-            
-            $code = str_pad(mt_rand(0, 999999), 6, '0', STR_PAD_LEFT);
-
-           
-            $_SESSION['verifcode'] = $code;
-                
-            $_SESSION['nom'] = $nom;
-            $_SESSION['prenom'] = $prenom;
-            $_SESSION['email'] = $email;
-            $_SESSION['mdp'] = $hashmdp;
-
-
-            $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com';
-            $mail->Port = 587;
-            $mail->SMTPSecure = 'tls';
-            $mail->SMTPAuth = true;
-            $mail->Username = 'rideawaycontact@gmail.com';
-            $mail->Password = 'scxg okmt cbkf ntmv';
-
-
-            $subject = 'Code de verification RideAway';
-            $message ='Votre code de verification est :  '. $code;
-            $headers = 'rideawaycontact@gmail.com' . "\r\n" .
-                'Reply-To: rideawaycontact@gmail.com' . "\r\n" .
-                'X-Mailer: PHP/' . phpversion();
-
-            $mail->isHTML(true);
-
-           
-            $mail->setFrom('rideawaycontact@gmail.com', 'RideAway');
-            $mail->addReplyTo('rideawaycontact@gmail.com', 'RideAway');
-            $mail->addAddress($email);
-            $mail->Subject = $subject;
-            $mail->Body = $message;
-            $mail->addCustomHeader('Return-Path', 'rideawaycontact@gmail.com');
-            
-
-            
-            if (!$mail->send()) {
-                echo 'Erreur lors de l\'envoi du message : ' . $mail->ErrorInfo;
+            if($res_requete != NULL ){
+                echo" l'adresse mail est déja utilisé";
             } else {
-                header('Location: confirmationsignup.php');
-                exit();
-            };
+
+                try {
+                    $mail = new PHPMailer();
+                    echo "PhpMailer bien utilisé";
+        
+                } catch (Exception $e) {
+                    $e->getMessage();
+                }
+                $nom = $_POST["nom"];
+                $prenom = $_POST["prenom"];
+                $email = $_POST["mail"];
+                $mdp = $_POST["mdp"];
+                $hashmdp = password_hash($mdp, PASSWORD_DEFAULT);
+
+                session_start();
+
+                
+                $code = str_pad(mt_rand(0, 999999), 6, '0', STR_PAD_LEFT);
+
+            
+                $_SESSION['verifcode'] = $code;
+                    
+                $_SESSION['nom'] = $nom;
+                $_SESSION['prenom'] = $prenom;
+                $_SESSION['email'] = $email;
+                $_SESSION['mdp'] = $hashmdp;
+
+
+                $mail->isSMTP();
+                $mail->Host = 'smtp.gmail.com';
+                $mail->Port = 587;
+                $mail->SMTPSecure = 'tls';
+                $mail->SMTPAuth = true;
+                $mail->Username = 'rideawaycontact@gmail.com';
+                $mail->Password = 'scxg okmt cbkf ntmv';
+
+
+                $subject = 'Code de verification RideAway';
+                $message ='Votre code de verification est :  '. $code;
+                $headers = 'rideawaycontact@gmail.com' . "\r\n" .
+                    'Reply-To: rideawaycontact@gmail.com' . "\r\n" .
+                    'X-Mailer: PHP/' . phpversion();
+
+                $mail->isHTML(true);
+
+            
+                $mail->setFrom('rideawaycontact@gmail.com', 'RideAway');
+                $mail->addReplyTo('rideawaycontact@gmail.com', 'RideAway');
+                $mail->addAddress($email);
+                $mail->Subject = $subject;
+                $mail->Body = $message;
+                $mail->addCustomHeader('Return-Path', 'rideawaycontact@gmail.com');
+                
+
+                
+                if (!$mail->send()) {
+                    echo 'Erreur lors de l\'envoi du message : ' . $mail->ErrorInfo;
+                } else {
+                    header('Location: confirmationsignup.php');
+                    exit();
+                };
+            }
 
 
         };       
@@ -147,7 +159,7 @@
                 <input type="password" placeholder="Mot de passe :" name="mdp">
             </div>
         </div>
-        <button type="submit">S'incrire</button>
+        <button type="submit" class="bttconnexion">S'incrire</button>
        
     </form>
 </body>

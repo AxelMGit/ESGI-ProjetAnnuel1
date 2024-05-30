@@ -3,47 +3,8 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* ///////////////STYLE BOUTONS CONNEXION ET INSCRIPTION///////// */
-.login-button {
-    position: fixed ;
-    margin-left: 84%;
-    margin-top: 1%;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: 1px solid #ffffff; 
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    transition: opacity 0.3s;
-    z-index: 1;
-    
-}
 
-.login-button:hover {
-    opacity: 0.5;
-}
 
-.signup-button {
-    position: fixed ;
-    margin-left: 92%;
-    margin-top: 1%;
-    background-color: #ef4023;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none; 
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    z-index: 1;
-    
-}
-
-.signup-button:hover {
-    opacity: 0.5;
-    
-}
 
 /* /////////////STYLE NAVBAR//////////// */
 .nav {
@@ -123,6 +84,11 @@ main small {
   width: 100%;
   pointer-events: none;
   z-index: 1;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-weight: 600;
+  letter-spacing: .03em;
+  color: #ffffff;
+  
 }
 #nav-container .bg {
   position: absolute;
@@ -166,9 +132,6 @@ main small {
   height: 3px;
   background: #ffffff;
   transition: .3s;
-}
-.jaune {
-  background: #ffffff;
 }
 
 .icon-bar + .icon-bar {
@@ -254,10 +217,13 @@ html, body.accueil {
   height: 100%;
   background-color: #000000;
   background-image: url('img/bg1.jpg');
+  
+  background-position: fixed;
+  object-fit: cover;
+  opacity: 95%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: fixed;
-  opacity: 95%;
+  background-attachment: fixed; 
 }
 
 
@@ -295,10 +261,10 @@ img {
 #chatbot {
   width: 50vh; 
   height: 50vh; 
-  float: right;
+  position: absolute;
   padding-bottom: 10px;
-  margin-top: 18.1%;
-  margin-right: 0;
+  margin-top: 12%;
+  margin-left: 40%;
 }
 
 
@@ -313,6 +279,8 @@ img {
   text-align: center;
   width: 100%; 
   opacity: 0.75; 
+  
+ 
 }
   
 .footer .row {
@@ -415,15 +383,16 @@ img {
 
 .contact {
   padding: 20px;
-  margin: auto;
-  max-width: 800px;
 
-  background-color: rgba(38, 32, 32, 0.70);
+  width: 45%;
+  position: relative;
+  margin-left: 27.5%;
+  background-color: rgba(38, 32, 32, 0.30);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255,255,255,0.1);
   box-shadow: 0 0 40px rgba(8,7,16,0.6);
   overflow: hidden;
-  margin-top: 100px;
+  
   transform: translateY(-5%);
 }
 

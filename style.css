@@ -45,10 +45,11 @@
     
 }
 
+/* /////////////STYLE NAVBAR//////////// */
 .nav {
-    position: absolute;
+    position: fixed;
     top: 3%;
-    right: 20%;
+    left: 20%;
     z-index: 1;
 }
 
@@ -338,7 +339,7 @@ img {
 
 /* ///////////////////STYLE LOGO////////////// */
 #logo {
-  position: absolute; 
+  position: fixed; 
   top: 2%; 
   left: 15%; 
   width: 9%;
@@ -593,3 +594,20 @@ img {
   
 };
 
+/* ////////////////////COULEURS MESSAGES ENVOYE OU ERREUR */
+
+.success-message {
+  color: white;
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.error-message {
+  color: white;
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}

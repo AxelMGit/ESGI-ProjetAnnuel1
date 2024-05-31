@@ -8,14 +8,11 @@
 </head>
 <body>
 
-
 <?php 
 include('connexionbase.php'); 
 require_once('vendor/autoload.php');
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
 ?>
 
 <div class="page">
@@ -26,7 +23,6 @@ use PHPMailer\PHPMailer\Exception;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </div>
-        
         <div id="nav-content" tabindex="0">
             <ul>
                 <li><a href="#0">Poster</a></li>
@@ -50,10 +46,9 @@ use PHPMailer\PHPMailer\Exception;
     <h1>Contactez-nous</h1>
     <p>Nous serions ravis de répondre à vos questions et d'entendre vos suggestions. Veuillez remplir le formulaire ci-dessous pour nous contacter.</p>
     <br>
-<!-- ----------------PARTIE PHP ET CONFIGURATION DE LENVOI DU MAIL DE CONTACT---------- -->
+
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Validation et assainissement des entrées utilisateur
         $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = filter_var(trim($_POST["message"]), FILTER_SANITIZE_STRING);
@@ -61,9 +56,7 @@ use PHPMailer\PHPMailer\Exception;
         if (!empty($name) && !empty($email) && !empty($message)) {
             if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 $mail = new PHPMailer(true);
-
                 try {
-                    
                     $mail->isSMTP();
                     $mail->Host = 'smtp.gmail.com'; 
                     $mail->SMTPAuth = true;
@@ -71,17 +64,12 @@ use PHPMailer\PHPMailer\Exception;
                     $mail->Password = 'scxg okmt cbkf ntmv'; 
                     $mail->SMTPSecure = 'tls';
                     $mail->Port = 587;
-
-                    
                     $mail->setFrom('rideawaycontact@gmail.com', 'Contact Form');
                     $mail->addAddress('rideawaycontact@gmail.com'); 
                     $mail->addReplyTo($email, $name);
-
-                    
                     $mail->isHTML(false);
                     $mail->Subject = 'Nouveau message de contact';
                     $mail->Body = "Nom: $name\nEmail: $email\nMessage:\n$message";
-
                     $mail->send();
                     echo "<p class='success-message'>Votre message a bien été envoyé.</p>";
                 } catch (Exception $e) {
@@ -95,7 +83,7 @@ use PHPMailer\PHPMailer\Exception;
         }
     }
     ?>
-<!-- -------------------INPUT DE CONTACT------------- -->
+
     <form action="contact.php" method="post">
         <div class="form-group">
             <label for="name">Nom :</label>
@@ -114,34 +102,6 @@ use PHPMailer\PHPMailer\Exception;
         </div>
     </form>
 </section>
-    <?php include('connexionbase.php'); ?>
-
-    
-    <?php include('navbar.php'); ?>
-    
-  
-    <div class="contact">
-        <h1>Contactez-nous</h1>
-        <p>Nous serions ravis de répondre à vos questions et d'entendre vos suggestions. Veuillez remplir le formulaire ci-dessous pour nous contacter.</p>
-            <br>
-        <form action="submit_contact.php" method="post">
-            <div class="form-group">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit">Envoyer</button>
-            </div>
-        </form>
-    </div>
 
 <footer>
     <div class="footer">

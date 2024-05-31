@@ -3,48 +3,86 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-
-
-
-/* /////////////STYLE NAVBAR//////////// */
-.nav {
-    position: fixed;
-    top: 3%;
-    left: 20%;
-    z-index: 1;
-}
-
-nav {
-    text-align: right;
-    z-index: 1;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 1;
-}
-
-.header-with-border {
-    position: relative; 
-}
-
-
-/* ////////////////////////////////ONGLETS NAVIGATION//////////////////////////// */
-
-
-
+/* ////////////////STYLE DES PAGES GLOBALES///////////// */
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   outline: none;
+}
+
+html, body.accueil {
+  height: 100%;
+  background-color: #000000;
+  background-image: url('img/bg1.jpg');
+  background-position: fixed;
+  object-fit: cover;
+  opacity: 95%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:link {
+  text-decoration: none;
+  outline: 0;
+}
+
+a {
+  color: currentColor;
+  transition: .2s ease-in-out;
 }
 
 strong {
   font-weight: 600;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
+}
+
+/* /////////////POSITION DE LA BAR DE NAV//////////// */
+.nav {
+  position: fixed;
+  top: 3%;
+  left: 20%;
+  z-index: 1;
+}
+
+nav {
+  text-align: right;
+  z-index: 1;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.header-with-border {
+  position: relative;
+}
+
+/* /////////////////////STYLE DE LA BAR DE NAV///////// */
 .page {
   width: 100%;
   height: auto;
@@ -78,6 +116,7 @@ main small {
   color: #888;
 }
 
+/* ////////////////ONGLETS BARRE DE NAV///////// */
 #nav-container {
   position: fixed;
   height: 100vh;
@@ -88,8 +127,8 @@ main small {
   font-weight: 600;
   letter-spacing: .03em;
   color: #ffffff;
-  
 }
+
 #nav-container .bg {
   position: absolute;
   top: 70px;
@@ -100,10 +139,12 @@ main small {
   opacity: 0;
   transition: .3s;
 }
+
 #nav-container:focus-within .bg {
   visibility: visible;
   opacity: .6;
 }
+
 #nav-container * {
   visibility: visible;
 }
@@ -126,6 +167,7 @@ main small {
   touch-action: manipulation;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+
 .icon-bar {
   display: block;
   width: 100%;
@@ -141,12 +183,15 @@ main small {
 #nav-container:focus-within .button {
   pointer-events: none;
 }
+
 #nav-container:focus-within .icon-bar:nth-of-type(1) {
   transform: translate3d(0,8px,0) rotate(45deg);
 }
+
 #nav-container:focus-within .icon-bar:nth-of-type(2) {
   opacity: 0;
 }
+
 #nav-container:focus-within .icon-bar:nth-of-type(3) {
   transform: translate3d(0,-8px,0) rotate(-45deg);
 }
@@ -199,6 +244,7 @@ main small {
   font-weight: 400;
   color: #888;
 }
+
 .small a + a {
   margin-left: 15px;
 }
@@ -207,57 +253,7 @@ main small {
   transform: none;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body.accueil {
-  height: 100%;
-  background-color: #000000;
-  background-image: url('img/bg1.jpg');
-  
-  background-position: fixed;
-  object-fit: cover;
-  opacity: 95%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; 
-}
-
-
-a,
-a:visited,
-a:focus,
-a:active,
-a:link {
-  text-decoration: none;
-  outline: 0;
-}
-
-a {
-  color: currentColor;
-  transition: .2s ease-in-out;
-}
-
-h1, h2, h3, h4 {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-img {
-  vertical-align: middle;
-  height: auto;
-  width: 100%;
-}
-
-
-/* //////////////STYLE CHATBOT/////////// */
+/* //////////////STYLE ET POSTION DU CHATBOT////////// */
 #chatbot {
   width: 50vh; 
   height: 50vh; 
@@ -267,9 +263,7 @@ img {
   margin-left: 40%;
 }
 
-
-/* /////////////////////////////////////FOOTER/////////// */
-
+/*////////////////STYLE ET POSITION DU FOOTER//////// */
 .footer {
   position: fixed; 
   bottom: 0;
@@ -279,10 +273,8 @@ img {
   text-align: center;
   width: 100%; 
   opacity: 0.75; 
-  
- 
 }
-  
+
 .footer .row {
   width: 100%;
   margin: 1% 0%;
@@ -290,22 +282,22 @@ img {
   color: gray;
   font-size: 0.8em;
 }
-  
+
 .footer .row a:hover {
   color: #ffffff;
 }
-  
+
 .footer .row ul li {
   display: inline-block;
   margin: 0px 30px;
 }
 
-/* ///////////////////////AJOUT CLASS FOOTER POUR LA PAGE TERMS/////////// */
+/*///////////////FOOTER POUR LA PAGE TERMS & CONDITIONS */
 .terms-page .footer {
   position: relative;
 }
 
-/* ///////////////////STYLE LOGO////////////// */
+/* /////////////////POSITION ET STYLE DU LOGO//////// */
 #logo {
   position: fixed; 
   top: 2%; 
@@ -313,8 +305,7 @@ img {
   width: 9%;
 }
 
-
-/*///////////////////////////STYLE COMPTEUR/////////// */
+/* /////////////////PERSONNES CONNECTES EN DIRECT/////// */
 #connected-users {
   position: absolute;
   top: 10px;
@@ -327,9 +318,7 @@ img {
   font-size: 20px;
 }
 
-/* ////////////////////STYLE PAGE APPLICATION//////////////////// */
-
-
+/* ///////////////STYLE DE LA PAGE APPLICATION/////// */
 .application {
   text-align: center;
   padding: 50px 20px;
@@ -364,13 +353,13 @@ img {
 
 @keyframes loading {
   0% {
-      width: 0;
+    width: 0;
   }
   50% {
-      width: 100%;
+    width: 100%;
   }
   100% {
-      width: 0;
+    width: 0;
   }
 }
 
@@ -379,11 +368,9 @@ img {
   font-size: 16px;
 }
 
-/* //////////STYLE PAGE CONTACT////////////// */
-
+/* /////////////////////STYLE DE LA PAGE CONTACT//////////// */
 .contact {
   padding: 20px;
-
   width: 45%;
   position: relative;
   margin-left: 27.5%;
@@ -392,8 +379,7 @@ img {
   border: 2px solid rgba(255,255,255,0.1);
   box-shadow: 0 0 40px rgba(8,7,16,0.6);
   overflow: hidden;
-  
-  transform: translateY(-5%);
+  transform: translateY(10%);
 }
 
 .contact h1 {
@@ -419,17 +405,15 @@ img {
 .contact .form-group input,
 .contact .form-group textarea {
   display: flex;
-    height: 10%;
-    min-height: 50px;
-    width: 100%;
-    background-color: rgba(255,255,255,0.07);
-    border-radius: 3px;
-    margin-top: 3%;
-    
-    
-    font-size: 14px;
-    font-weight: 300;
-    color: white;
+  height: 10%;
+  min-height: 50px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 3px;
+  margin-top: 3%;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
 }
 
 .contact .form-group button {
@@ -448,8 +432,7 @@ img {
   background-color: #212121;
 }
 
-/* //////////////STYLE PAGE TERMES & CONDITIONS//////// */
-
+/* /////////////STYLE PAGE TERMS & CONDITIONS//////// */
 .terms {
   padding: 20px;
   margin: 20px auto;
@@ -474,97 +457,83 @@ img {
   color: #555;
 }
 
-/* Style pour les liens dans la section .terms */
 .terms a {
-  color: blue; /* Couleur bleue pour les adresses e-mail */
-  text-decoration: none; /* Pour enlever le soulignement par défaut des liens */
+  color: blue; /* ////////////COULEUR BLEU POUR LES MAILS */
+  text-decoration: none; /* /////////ENLEVER LE SURLIGNEMENT DES MAILS//////// */
 }
 
 .terms a:hover {
-  text-decoration: underline; /* Ajouter un soulignement au survol */
+  text-decoration: underline; /* //////AJOUTER UN SURLIGNEMENT AU SURVOL///// */
 }
 
 .terms-logo {
-  margin-left: -50px; /* Déplacement vers la gauche */
+  margin-left: -50px; /* ////DEPLACER LE LOGO A DROITE////*/
 }
 
-
-/* /////////////////////////////STYLE PAGE FORUM////////////////////////////////////////// */
-
-#buttonposter{
-    
+/* //////STYLE DE LA PAGE FORUM////// */
+#buttonposter {
   display: flex;
-  justify-content: end;
   justify-content: space-evenly;
   margin-top: 15%;
-
-
 }
-#body2{
+
+#body2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#post{
-  
-  border: 2px solid;
-  border-color: black;
+#post {
+  border: 2px solid black;
   border-radius: 5px;
   width: 80%;
   background-color: #919191;
   color: white;
   margin: 0.5%;
   text-align: left;
-  word-wrap : break-word; 
+  word-wrap: break-word;
 }
 
-#postcom{
-  
-  border: 2px solid;
-  border-color: black;
+#postcom {
+  border: 2px solid black;
   border-radius: 5px;
   width: 70%;
   background-color: #bdbaba;
   color: white;
   margin: 0.5%;
   text-align: left;
-  word-wrap : break-word; 
+  word-wrap: break-word;
 }
-
-
 
 .h2 {
   text-align: center;
   text-decoration: dashed;
   display: inline;
 }
+
 .h3 {
   text-align: left;
   display: inline;
-  
 }
 
-.p{
+.p {
   text-align: end;
 }
 
-.pcom{
+.pcom {
   text-align: center;
 }
+
 .h4 {
   text-align: center;
-  
-  
 }
+
 .h4b {
   text-align: center;
   justify-content: center;
-  
-};
+}
 
-/* ////////////////////COULEURS MESSAGES ENVOYE OU ERREUR */
-
+/* ///////MESSAGES CONTACT SUCCESS OU ERREUR/////// */
 .success-message {
   color: white;
   background-color: green;

@@ -159,7 +159,8 @@
                 <input type="password" placeholder="Mot de passe :" name="mdp">
             </div>
         </div>
-        <button type="submit" class="bttconnexion">S'incrire</button>
+        <button class="bttconnexion" type="submit">S'inscrire </button>
+        
        
     </form>
 </body>

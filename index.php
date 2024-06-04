@@ -109,7 +109,6 @@
                         $id_user = $res_requete['id_user'];
                         $_SESSION['id_user'] = $id_user;
 
-
                         unset($_SESSION['verifcode']);
                         unset($_SESSION['email']);
                         unset($_SESSION['mdp']);
@@ -157,10 +156,7 @@
            
         <button class="bttconnexion" type="submit">Se connecter </button>
 
-        
-
-        <button class="bttinscription"><a href="signup.php">Inscription</a></button>
-       
+    
     </form>
     
     

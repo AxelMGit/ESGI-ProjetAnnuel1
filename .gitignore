@@ -3,3 +3,5 @@ vendor/phpmailer/phpmailer/
 PHPmailer/vendor/phpmailer/phpmailer/
 sessions.txt
 config.php
+/uploads/
+/uploads/*

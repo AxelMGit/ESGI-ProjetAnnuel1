@@ -12,7 +12,7 @@
     
 </head>
 
-<body>
+
     <?php include('connexionbase.php'); 
     session_start();
     if (isset($_SESSION['id_user'])) {
@@ -132,52 +132,44 @@
         
 
     ?>
-    
-    
-    <div class="page">
-        <div id="logo">
+<body>
+        
+    <div class="container">
+        <div class="contener_top">
+            
             <a href="index.php">
                 <img src="img/logo.png" alt="logo">
             </a>
-        </div>
-    </div>
-
-    
-    
-    <form class="formsignlogin" method="post" >
-    
-        <h3>Connexion</h3>
             
-        <label >Mail :</label>
-        <input type="text" placeholder="exemple@mail.com" name="mail">
+            <a href="signup.php"><button class="button_con_ins">Connexion</button></a>
+            
+        </div>
 
-        <label>Mot de passe :</label>
-        <input type="password" placeholder="Mot de passe :" name="mdp">
-           
-        <button class="bttconnexion" type="submit">Se connecter </button>
+        <div class="contener_mid">
+            <form class="formsignlogin" method="post" >
+            
+                <h3>Connexion</h3>
+                    
+                <label >Mail :</label>
+                <input type="text" placeholder="exemple@mail.com" name="mail">
 
+                <label>Mot de passe :</label>
+                <input type="password" placeholder="Mot de passe :" name="mdp">
+                
+                <button class="bttconnexion" type="submit">Se connecter</button>
+            </form>
+        </div>
     
-    </form>
-    
-    
+
+        <div class="contener_bottom">
+            <?php include('footer.php'); ?>
+        </div>
+    </div> 
 </body>
 
-
-<footer>
-    <div class="footer">
-        <div class="row">
-
-        </div>
-
-        <div class="row">
-            <ul>
-                <li><a href="application.html">L'application</a></li>
-                <li><a href="contact.php">Assistance</a></li>
-                <li><a href="#">A propos de nous</a></li>
-                <li><a href="termes_conditions.html">Termes & Conditions</a></li>
-            </ul> 
-        </div>
-    </div>
-</footer>
-
 </html>
+
+
+        
+        
+        

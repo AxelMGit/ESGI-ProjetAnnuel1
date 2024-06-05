@@ -1,22 +1,66 @@
+/* /////////////////////////button haut droite connexion/inscription/////////////////////////////// */
 
+.button_con_ins {
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 2px;
+    position: relative;
+    background-color: #a01616;
+    border: none;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #471919;
+    border-radius: 4px;
+  }
+  
+  .button_con_ins:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #bc1a1a;
+    color: #000;
+  }
+  
+  .button_con_ins:after {
+    content: "";
+    background: #f5715a;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button_con_ins:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  
+  .button_con_ins:focus { outline:0; }
+  
+  
 
 
 .formsign{
 
-
-    height: 65%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 400px;
     width: 40%;
     background-color: rgba(255,255,255,0.13);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 55%;
-    left: 50%;
+    margin-left: 27.5%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
-    margin-bottom: 50px
+    
     
     
 }
@@ -101,11 +145,13 @@ input{
 }
 
 .formsignlogin{
-    height: 65%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 400px;
     width: 40%;
     background-color: rgba(255,255,255,0.13);
-    margin-top: 5%;
-    margin-left: 30%;
+    margin-left: 27.5%;
+    
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
@@ -242,3 +288,5 @@ dialog p{
     text-align: center;
     
 }
+
+

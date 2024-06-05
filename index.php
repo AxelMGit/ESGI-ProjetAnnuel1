@@ -109,24 +109,6 @@
                         $id_user = $res_requete['id_user'];
                         $_SESSION['id_user'] = $id_user;
 
-    <div class="page">
-        <div id="nav-container">
-            <div class="bg"></div>
-            <div class="button" tabindex="0">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </div>
-            <div id="nav-content" tabindex="0">
-                <ul>
-                    <li><a href="#0">Poster</a></li>
-                    <li><a href="ajouter.php">Forum</a></li>
-                    <li><a href="#0">Entretiens</a></li>
-                    <li><a href="#0">GPS moto</a></li>
-                </ul>
-            </div>
-        </div>
-
                         unset($_SESSION['verifcode']);
                         unset($_SESSION['email']);
                         unset($_SESSION['mdp']);
@@ -144,11 +126,6 @@
                 echo "Erreur de mot de passe ou de nom d'utilisateur.";
             }
                 
-
-            
-            
-
-
         };       
         
         
@@ -179,10 +156,7 @@
            
         <button class="bttconnexion" type="submit">Se connecter </button>
 
-        
-
-        <button class="bttinscription"><a href="signup.php">Inscription</a></button>
-       
+    
     </form>
     
     
@@ -190,20 +164,20 @@
 
 
 <footer>
-<div class="footer">
-<div class="row">
+    <div class="footer">
+        <div class="row">
 
-</div>
+        </div>
 
-<div class="row">
-<ul>
-<li><a href="application.html">L'application</a></li>
-<li><a href="contact.php">Assistance</a></li>
-<li><a href="#">A propos de nous</a></li>
-<li><a href="termes_conditions.html">Termes & Conditions</a></li>
-</ul> 
-</div>
-</div>
+        <div class="row">
+            <ul>
+                <li><a href="application.html">L'application</a></li>
+                <li><a href="contact.php">Assistance</a></li>
+                <li><a href="#">A propos de nous</a></li>
+                <li><a href="termes_conditions.html">Termes & Conditions</a></li>
+            </ul> 
+        </div>
+    </div>
 </footer>
 
 </html>

@@ -62,22 +62,10 @@
         <h2>7. Contactez-nous</h2>
         <p>Si vous avez des questions concernant ces termes et conditions, veuillez nous contacter à l'adresse suivante : <a href="mailto:rideawaycontact@gmail.com">rideawaycontact@gmail.com</a>.</p>
     </section>
+
+    <<div class="contener_bottom">
+        <?php include('footer.php'); ?>
+    </div>
+
 </body>
 </html>
-
-<footer>
-<div class="footer">
-<div class="row">
-    
-</div>
-    
-<div class="row">
-<ul>
-<li><a href="application.html">L'application</a></li>
-<li><a href="contact.php">Assistance</a></li>
-<li><a href="#">A propos de nous</a></li>
-<li><a href="termes_conditions.html">Termes & Conditions</a></li>
-</ul> 
-</div>
-</div>
-</footer>

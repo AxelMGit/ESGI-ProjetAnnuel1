@@ -9,43 +9,44 @@
 </head>
 <body class="accueil">
     
-<?php include('connexionbase.php'); 
-    session_start();
-    if (!isset($_SESSION['id_user'])) {
-        header('Location: index.php'); 
-        exit();
-    }
-?>
+    <?php include('connexionbase.php'); 
+        session_start();
+        if (!isset($_SESSION['id_user'])) {
+            header('Location: index.php'); 
+            exit();
+        }
+    ?>
 
-    <div class="page">
-        <?php include('navbar.php'); ?>
+    
+    <?php include('navbar.php'); ?>
         
-        <iframe id="chatbot" 
-                src="chatbot.php"
-                frameborder="0">
-        </iframe>
-    </div>
+    <div class="container">
+        <div class="contener_top">
+ 
+            <a href="index.php">
+                <img src="img/logo.png" alt="logo">
+            </a>
+        
+        </div>
 
+
+        <div class="contener_mid">
+            <iframe id="chatbot" 
+                    src="chatbot.php"
+                    frameborder="0">
+            </iframe>
+        </div>
+
+
+        <div class="contener_bottom">
+            <?php include('footer.php'); ?>
+        </div>
+    </div>
 
     
 </body>
 
 
-    <footer>
-        <div class="footer">
-            <div class="row">
-
-            </div>
-
-            <div class="row">
-                <ul>
-                    <li><a href="application.html">L'application</a></li>
-                    <li><a href="contact.html">Assistance</a></li>
-                    <li><a href="#">A propos de nous</a></li>
-                    <li><a href="termes_conditions.html">Termes & Conditions</a></li>
-                </ul> 
-            </div>
-        </div>
-    </footer>
+    
 
 </html>

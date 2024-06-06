@@ -197,14 +197,14 @@ input{
 
 .classdialogue{
   width: 50%;
-  height: 80%;
-  position: fixed;
-  margin-left: 25%;
-  margin-top: 7%;
+  height: 75%;
+  position: relative;
+  margin-top: 30px;
   display: flex;
+  flex-direction: row;
   
   background-color: rgba(38, 32, 32, 0.70);
-  z-index: 1;
+  
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255,255,255,0.1);
   box-shadow: 0 0 40px rgba(8,7,16,0.6);
@@ -214,11 +214,11 @@ input{
 
 dialog form {
     
-    position: absolute;
-    width: 35%;
+    position: relative;
+    width: 40%;
     height: 80%;
-    left: 55%;
-    top:7%;
+    margin-left: 7.5%;
+    
     
     
     border-radius: 10px;
@@ -232,10 +232,10 @@ video{
     position: relative;
     max-width: 50%;
     width: 550px;
+    height: max-content;
+    margin-top: -5%;
+    margin-left: -5%;
     
-    
-    left: 0;
-    margin-left: -6%;
     background-color: rgba(38, 32, 32, 0.0);
     
 }
@@ -250,7 +250,7 @@ dialog button{
     border-radius: 5px;
     cursor: pointer;
     margin-left: 5%;
-    margin-top: 0%;
+    margin-top: 10%;
 }
 dialog input{
     display: flex;
@@ -273,7 +273,7 @@ dialog label{
     font-weight: 500;
 }
 dialog form h3{
-    margin-top: 15%;
+    margin-top: 10%;
     font-size: 32px;
     font-weight: 300;
     line-height: 30px;

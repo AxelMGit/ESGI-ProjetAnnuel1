@@ -9,6 +9,7 @@
 </head>
 <body class="accueil">
     
+
     <?php include('connexionbase.php'); 
         session_start();
         if (!isset($_SESSION['id_user'])) {
@@ -45,8 +46,4 @@
 
     
 </body>
-
-
-    
-
 </html>

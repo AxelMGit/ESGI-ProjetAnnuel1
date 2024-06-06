@@ -58,14 +58,6 @@
     };
 ?>
     
-   
-    
-
-       
-
-        
-    
-    
     
     <div class="container">
         <div class="contener_top">

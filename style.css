@@ -397,24 +397,25 @@ img {
   padding: 20px;
   margin: 20px auto;
   max-width: 800px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(38, 32, 32, 0.30);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
 }
 
 .terms h1 {
-  color: #000000;
+  color: #ffffff;
   text-align: center;
 }
 
 .terms h2 {
-  color: #333;
+  color: #ffffff;
   margin-top: 20px;
 }
 
 .terms p {
   line-height: 1.5;
-  color: #555;
+  color: #a19f9f;
 }
 
 /* Style pour les liens dans la section .terms */

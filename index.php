@@ -141,7 +141,7 @@
                 <img src="img/logo.png" alt="logo">
             </a>
             
-            <a href="signup.php"><button class="button_con_ins">Connexion</button></a>
+            <a href="signup.php"><button class="button_con_ins">Inscription</button></a>
             
         </div>
 

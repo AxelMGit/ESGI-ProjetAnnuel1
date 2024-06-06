@@ -7,7 +7,7 @@
     <script type="text/javascript" src="chatbot.js"></script>
     <title>RideAway</title>
 </head>
-<body class="accueil">
+<body>
     
 
     <?php include('connexionbase.php'); 

@@ -15,4 +15,5 @@
             <li><a href="logout.php">Déconnexion</a></li>
         </ul>
     </div>
+</div>
 

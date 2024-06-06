@@ -53,69 +53,50 @@
             echo "Le code de sécurité est incorrect. Veuillez réessayer.";
         }
     };
-?>
+    ?>
     
    
-    <div class="page">
-        <div id="nav-container">
-            <div class="bg"></div>
-            <div class="button" tabindex="0">
-                <span class="icon-bar jaune"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar jaune"></span>
-            </div>
-            <div id="nav-content" tabindex="0">
-                <ul>
-                    <li><a href="index.php">Poster</a></li>
-                    <li><a href="ajouter.php">Forum</a></li>
-                    <li><a href="#0">Entretiens</a></li>
-                    <li><a href="#0">GPS moto</a></li>
-                    <li><a href="#0">Contact</a></li>
-                </ul>
-            </div>
+  
+    
+    
+    <div class="container">
+        <div class="contener_top">
+ 
+            <a href="index.php">
+                <img src="img/logo.png" alt="logo">
+            </a>
+        
         </div>
 
-        <div id="logo">
-    <a href="index.php">
-        <img src="img/logo.png" alt="logo">
-    </a>
-</div>
 
-        <div class="login-buttons">
-            <a href="login.php" class="login-button">Connexion</a>
-            <a href="signup.php" class="signup-button">Inscription</a>
+        <div class="contener_mid">
+            <dialog id="maBoiteDeDialogue" class="classdialogue">
 
+                    <video  preload="auto" autoplay loop muted>
+                        <source src="img\videor3.mov" type="video/mp4">
+                    </video>
+
+                    <form method="post" >
+                        <h3>Connexion</h3>
+
+                        <p>Vous allez recevoir un email de confirmation,</p>
+                        <p>si vous ne le recevez pas, veuillez vérifier votre boite de spam</p>
+
+
+                        <label> Veuillez saisir le code :</label>
+                        <input type="text" placeholder="------" name="codeverif">
+
+                        <button type="submit">Valider</button>
+                        
+                    
+                    </form>  
+            </dialog>
+        </div>
+
+
+        <div class="contener_bottom">
+            <?php include('footer.php'); ?>
         </div>
     </div>
-    
-    
-    
-
-    <dialog id="maBoiteDeDialogue" class="classdialogue">
-
-            <video  preload="auto" autoplay loop muted>
-                <source src="img\videor3.mov" type="video/mp4">
-            </video>
-
-            <form method="post" >
-                <h3>Inscription</h3>
-
-                <p>Vous allez recevoir un email de confirmation,</p>
-                <p>si vous ne le recevez pas, veuillez vérifier votre boite de spam</p>
-
-
-                <label> Veuillez saisir le code :</label>
-                <input type="text" placeholder="------" name="codeverif">
-
-                <button type="submit">Valider</button>
-                
-            
-            </form>
-
-            
-            
-            
-    </dialog>
-
 </body>
 </html>

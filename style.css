@@ -37,14 +37,13 @@ body {
   align-items: center;
   padding-top: 1%;
   position: fixed;
-  z-index: 1;
   
 }
 
 
 .contener_mid {
   width: 100%;
-  margin-top: 75px;
+  margin-top: 5%;
   flex: 1;
 }
 
@@ -61,7 +60,7 @@ body {
 #nav-container {
   position: fixed;
   height: 100vh;
-  width: 100%;
+  width: 10%;
   pointer-events: none;
   z-index: 1;
   font-family: 'Encode Sans Condensed', sans-serif;
@@ -200,10 +199,9 @@ img {
 #chatbot {
   width: 50vh; 
   height: 50vh; 
-  position: absolute;
+  position: relative;
   padding-bottom: 10px;
-  margin-top: 12%;
-  margin-left: 40%;
+  margin-left: 25%;
 }
 
 

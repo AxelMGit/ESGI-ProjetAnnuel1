@@ -12,7 +12,6 @@
     
 </head>
 
-
     <?php include('connexionbase.php'); 
     session_start();
     if (isset($_SESSION['id_user'])) {
@@ -20,6 +19,7 @@
         exit();
     }
     ?>
+
     <?php
         require_once('vendor/autoload.php');
         use phpmailer\phpmailer\PHPMailer;
@@ -35,6 +35,7 @@
             
             try {
                 $mail = new PHPMailer();
+                
                 echo "PhpMailer bien utilisé";
     
             } catch (Exception $e) {

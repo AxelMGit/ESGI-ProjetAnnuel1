@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application - En cours de création</title>
+    <title>A propos de nous</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,12 +17,11 @@
         </div>
         
         <div class="contener_mid"> 
-            <section class="application">
-                <h1>Notre application est en cours de création</h1>
-                <div class="loader-container">
-                    <div class="loader"></div>
-                </div>
-                <p>Merci de votre patience. Nous travaillons dur pour vous offrir la meilleure expérience possible.</p>
+            <section class="a_propos">
+                <h1>A propos de nous</h1>
+                <p>TEST1.</p>
+                <p>TEST2.</p>
+                <p>TEST3.</p>
             </section>
         </div>
 

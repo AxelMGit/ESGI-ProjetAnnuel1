@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="stylesignup.css">
 </head>
 
-    <?php include('connexionbase.php'); ?>
+    <?php include('connexionbase.php');?>
     <?php
         require_once('vendor/autoload.php');
         use phpmailer\phpmailer\PHPMailer;

@@ -391,6 +391,13 @@ img {
   margin: 10px 0;
 }
 
+/* ///////////STYLE PAGE A PROPOS/////////////////// */
+
+.a_propos h1,p {
+  color: white;
+  margin-left: 5%;
+  margin-top: 5%;
+}
 
 /* //////////////STYLE PAGE TERMES & CONDITIONS//////// */
 

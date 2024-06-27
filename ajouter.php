@@ -6,37 +6,30 @@
     <title>Forum</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        function updateConnectedUsers() {
-            fetch('compteur.php')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('connected-users-count').innerText = data;
-                });
-        }
-
         
-    window.addEventListener('scroll', function() {
-        const buttonWrapper = document.querySelector('.wrapper.fixed-bottom-right');
-        const footer = document.getElementById('footer');
-        const footerRect = footer.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-
         
-        if (footerRect.top <= windowHeight) {
+        window.addEventListener('scroll', function() {
+            const buttonWrapper = document.querySelector('.wrapper.fixed-bottom-right');
+            const footer = document.getElementById('footer');
+            const footerRect = footer.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
             
-            buttonWrapper.style.position = 'absolute';
-            buttonWrapper.style.top = `${window.scrollY + footerRect.top - buttonWrapper.offsetHeight - 20}px`;
-            buttonWrapper.style.bottom = 'auto';
-        } else {
-            
-            buttonWrapper.style.position = 'fixed';
-            buttonWrapper.style.bottom = '20px';
-            buttonWrapper.style.top = 'auto';
-        }
-    });
+            if (footerRect.top <= windowHeight) {
+                
+                buttonWrapper.style.position = 'absolute';
+                buttonWrapper.style.top = `${window.scrollY + footerRect.top - buttonWrapper.offsetHeight - 20}px`;
+                buttonWrapper.style.bottom = 'auto';
+            } else {
+                
+                buttonWrapper.style.position = 'fixed';
+                buttonWrapper.style.bottom = '20px';
+                buttonWrapper.style.top = 'auto';
+            }
+        });
 
 
-</script>
+    </script>
     
 </head>
 <body>
@@ -74,9 +67,7 @@
             <a href="index.php">
                 <img src="img/logo.png" alt="logo">
             </a>
-            <div id="connected-users">
-                <strong>Personnes connectées : <span id="connected-users-count">0</span></strong>
-            </div>
+            
         </div>
 
         <div class="contener_mid">
@@ -108,6 +99,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="wrapper fixed-bottom-right">
                 <a href="#demo-modal">+</a>
             </div>

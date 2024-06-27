@@ -55,11 +55,29 @@
                     
                     foreach ($res_requete1 as $key => $valeur1) {
                         
-                        echo '<div id="post" style="margin-left:-20%;margin-bottom:5%;" ><h3 class="h3">'.$valeur1['nom'].' '.$valeur1['prenom'].'</h3>' 
+                        echo '<div id="post" style="margin-bottom:5%;margin-left:-400px;" ><h3 class="h3">'.$valeur1['nom'].' '.$valeur1['prenom'].'</h3>' 
                             .'<h4 class="h4">'.'"'.substr($valeur1['Contents'], 0, 100).'"</h4>'
                             .'<p class="p">'.$valeur1['CreationTimestamp'].'</p></div>';
                     }
                 ?>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll-content" id="content">
+                <?php 
+                    $requete2 = 'SELECT Contents, CreationTimestamp, nom, prenom, utilisateur.id_user From comment Join utilisateur on utilisateur.id_user = comment.id_user Where comment.id_post = :idpost';
+                    $ex_requete2 = $pdo->prepare($requete2);
+                    $ex_requete2->execute([':idpost' => $_GET['idpost']]);
+                    $res_requete2 = $ex_requete2->fetchAll();
+                    
+                    foreach ($res_requete2 as $key2 => $valeur2) {
+                        
+                        echo '<div class="comblock"><h3 class="h3">'.$valeur2['nom'].' '.$valeur2['prenom'].'</h3>' 
+                            .'<h4 class="h4">'.'"'.substr($valeur2['Contents'], 0, 100).'"</h4>'
+                            .'<p class="p">'.$valeur2['CreationTimestamp'].'</p></div>';
+                    }
+                ?>
+                </div>
+            </div>
                 
         </div>
 

@@ -567,10 +567,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  
   transition: all .4s;
   width: 60%;
   height: 85%;
+  z-index: 1;
 }
 
 .modal:target {
@@ -644,5 +644,6 @@ img {
   position: fixed;
   bottom: 25px;
   left: 25%;
-  z-index: 1
 }
+
+

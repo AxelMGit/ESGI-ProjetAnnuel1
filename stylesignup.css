@@ -193,11 +193,7 @@ dialog form {
     padding: 15px;
 }
 
-<<<<<<< Updated upstream
-video{
-=======
 video {
->>>>>>> Stashed changes
     position: relative;
     max-width: 50%;
     width: 550px;
@@ -254,9 +250,4 @@ dialog p {
     font-weight: 500;
     line-height: 42px;
     text-align: center;
-<<<<<<< Updated upstream
 }
-
-=======
-}
->>>>>>> Stashed changes

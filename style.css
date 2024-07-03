@@ -613,3 +613,85 @@ img {
 .scroll-content p {
   margin: 0 0 10px;
 }
+
+/* /////////////PETIT TELEPHONE///////////// */
+@media (max-width: 480px) {
+  .contener_top {
+    height: 50px;
+  }
+
+  .contener_mid {
+    margin-top: 50px;
+    padding: 5px;
+  }
+
+  #nav-container {
+    width: 20%;
+  }
+
+  #nav-content {
+    width: 80%;
+  }
+
+  .contact {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #post {
+    width: 90%;
+    padding: 20px;
+    margin-left: 5%;
+  }
+
+  .wrapper a {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .modalcontent {
+    width: 90%;
+    height: 70%;
+  }
+}
+
+/* ////////////TELEPHONE MOYENS//////// */
+@media (min-width: 481px) and (max-width: 767px) {
+  .contener_top {
+    height: 60px;
+  }
+
+  .contener_mid {
+    margin-top: 60px;
+    padding: 10px;
+  }
+
+  #nav-container {
+    width: 15%;
+  }
+
+  #nav-content {
+    width: 85%;
+  }
+
+  .contact {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  #post {
+    width: 70%;
+    padding: 30px;
+    margin-left: 15%;
+  }
+
+  .wrapper a {
+    font-size: 40px;
+    padding: 15px;
+  }
+
+  .modalcontent {
+    width: 80%;
+    height: 80%;
+  }
+}

@@ -361,7 +361,7 @@ img {
   background-color: green;
   padding: 10px;
   border-radius: 5px;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .error-message {
@@ -369,8 +369,9 @@ img {
   background-color: red;
   padding: 10px;
   border-radius: 5px;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
+<<<<<<< Updated upstream
 
 .a_propos h1, p {
   color: white;
@@ -695,3 +696,5 @@ img {
     height: 80%;
   }
 }
+=======
+>>>>>>> Stashed changes

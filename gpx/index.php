@@ -27,8 +27,9 @@
         }
     </style>
 </head>
+
 <body>
-    <h1>Upload et Affichage de Fichiers GPX</h1>
+    <h1>Upload de Fichiers GPX</h1>
     
     <form id="uploadForm" action="upload.php" method="post" enctype="multipart/form-data" target="uploadTarget">
         <label for="gpxFile">Upload GPX File:</label>
@@ -68,7 +69,7 @@
         }
 
         function loadGPXFile(file) {
-            fetch('gpx_to_geojson.php?file=' + file)
+            fetch('gpx_to_geojson.php?gpx_id=' + file)
                 .then(response => response.json())
                 .then(data => {
                     console.log('Data GeoJSON:', data); // Ajouter cette ligne pour vérifier les données GeoJSON
@@ -175,6 +176,11 @@
         window.onload = function() {
             document.getElementById('uploadTarget').onload = handleUploadResponse;
         };
+        
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+           // window.close();
+        });
+
     </script>
 </body>
 </html>

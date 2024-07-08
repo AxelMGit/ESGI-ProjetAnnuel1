@@ -1,6 +1,7 @@
 <?php
-if (isset($_GET['file'])) {
-    $file = 'uploads/' . basename($_GET['file']);
+if (isset($_GET['gpx_id'])) {
+    $fileName = $_GET['gpx_id'];
+    $file = 'uploads/' . $fileName;
     if (file_exists($file)) {
         // Parse the GPX file
         $xml = simplexml_load_file($file);

@@ -393,11 +393,49 @@ img {
 
 /* ///////////STYLE PAGE A PROPOS/////////////////// */
 
-.a_propos h1,p {
-  color: white;
-  margin-left: 5%;
-  margin-top: 5%;
+.a_propos {
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  margin-left: 10%;
 }
+
+.a_propos h1 {
+  font-size: 36px;
+  margin-bottom: 10%;
+  color: white;
+}
+
+.about_boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about_box {
+  background-color: rgba(38, 32, 32, 0.70);
+  
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  border-radius: 10px;
+  padding: 20px;
+  width: 20%;
+  min-width: 250px;
+}
+
+.about_box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.about_box p {
+  font-size: 16px;
+  color: white;
+}
+
 
 /* //////////////STYLE PAGE TERMES & CONDITIONS//////// */
 
@@ -428,12 +466,13 @@ img {
 
 /* Style pour les liens dans la section .terms */
 .terms a {
-  color: blue; /* Couleur bleue pour les adresses e-mail */
-  text-decoration: none; /* Pour enlever le soulignement par défaut des liens */
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
 }
 
 .terms a:hover {
-  text-decoration: underline; /* Ajouter un soulignement au survol */
+  text-decoration: none;
 }
 
 .terms-logo {
@@ -528,7 +567,7 @@ img {
 };
 
 
-/* ////////////////////style modal page forum////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////style bouton modal page forum////////////////////////////////////////////////////////////////////////// */
 
 .wrapper {
   height: 100vh;
@@ -677,3 +716,4 @@ img {
   white-space: normal;
   overflow: auto; /* Ajoute une barre de défilement si nécessaire */
 }
+

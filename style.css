@@ -428,12 +428,13 @@ img {
 
 /* Style pour les liens dans la section .terms */
 .terms a {
-  color: blue; /* Couleur bleue pour les adresses e-mail */
-  text-decoration: none; /* Pour enlever le soulignement par défaut des liens */
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
 }
 
 .terms a:hover {
-  text-decoration: underline; /* Ajouter un soulignement au survol */
+  text-decoration: none;
 }
 
 .terms-logo {
@@ -676,4 +677,18 @@ img {
   word-wrap: break-word;
   white-space: normal;
   overflow: auto; /* Ajoute une barre de défilement si nécessaire */
+}
+
+/* ////////////////STYLE LOGO//////////////// */
+
+.logo {
+  /* Désactiver la sélection et le glisser-déposer */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+  user-select: none;         /* Standard syntax */
+
+  -webkit-user-drag: none;   /* Safari */
+  -moz-user-drag: none;      /* Firefox */
+  -ms-user-drag: none;       /* Internet Explorer/Edge */
 }

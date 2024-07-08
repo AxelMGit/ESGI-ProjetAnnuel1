@@ -25,7 +25,7 @@
         <div class="contener_top">
  
             <a href="index.php">
-                <img src="img/logo.png" alt="logo">
+                <img src="img/logo.png" alt="logo"> 
             </a>
         
         </div>

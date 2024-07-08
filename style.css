@@ -7,10 +7,12 @@ html {
   height: 100%;
   background-color: #000000;
   background-image: url('img/bg1.jpg');
-  background-position: center;
+  background-position: fixed;
+  object-fit: cover;
+  opacity: 95%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; 
 }
 
 body {
@@ -24,7 +26,6 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 0 10px;
 }
 
 .contener_top {
@@ -34,41 +35,47 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  
   position: fixed;
-  top: 0;
-  z-index: 1;
+  
 }
+
 
 .contener_mid {
   width: 100%;
-  margin-top: 75px;
+  margin-top: 5%;
   flex: 1;
-  padding: 10px;
+ 
 }
 
 .contener_bottom {
   width: 100%;
   height: 15%;
   z-index: 1;
+  
 }
+
+
+/* ////////////////////////////////bmenu navigation //////////////////////////// */
+
 
 #nav-container {
   position: fixed;
   height: 100vh;
   width: 10%;
   pointer-events: none;
-  z-index: 2;
+  z-index: 1;
   font-family: 'Encode Sans Condensed', sans-serif;
   font-weight: 600;
   letter-spacing: .03em;
   color: #ffffff;
+  
 }
 
 #nav-container:focus-within .bg {
   visibility: visible;
   opacity: .6;
 }
-
 #nav-container * {
   visibility: visible;
 }
@@ -78,8 +85,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 2;
-  appearance: none;
+  z-index: 1;
+  -webkit-appearance: none;
   border: 0;
   background: transparent;
   border-radius: 0;
@@ -91,7 +98,6 @@ body {
   touch-action: manipulation;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-
 .icon-bar {
   display: block;
   width: 100%;
@@ -107,15 +113,12 @@ body {
 #nav-container:focus-within .button {
   pointer-events: none;
 }
-
 #nav-container:focus-within .icon-bar:nth-of-type(1) {
   transform: translate3d(0,8px,0) rotate(45deg);
 }
-
 #nav-container:focus-within .icon-bar:nth-of-type(2) {
   opacity: 0;
 }
-
 #nav-container:focus-within .icon-bar:nth-of-type(3) {
   transform: translate3d(0,-8px,0) rotate(-45deg);
 }
@@ -130,6 +133,7 @@ body {
   left: 0;
   height: calc(100% - 70px);
   pointer-events: auto;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   transform: translateX(-100%);
   transition: transform .3s;
   will-change: transform;
@@ -156,6 +160,8 @@ body {
 #nav-content li:not(.small) + .small {
   margin-top: auto;
 }
+
+
 
 #nav-container:focus-within #nav-content {
   transform: none;
@@ -190,6 +196,8 @@ img {
   width: 30%;
 }
 
+
+/* //////////////STYLE CHATBOT/////////// */
 #chatbot {
   width: 50vh; 
   height: 50vh; 
@@ -198,40 +206,44 @@ img {
   margin-left: 25%;
 }
 
+
+/* /////////////////////////////////////FOOTER/////////// */
+
+
+
 .footer {
   position: relative;
   background: #000000;
-  padding: 10px;
+  padding: 1px;
   font-family: 'Play', sans-serif;
   text-align: center;
   width: 100%;
   opacity: 0.75;
+  height: 100%;
+  
+  
 }
 
 .footer .row {
   width: 100%;
-  margin: 10px 0;
-  padding: 10px 0;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
   color: gray;
   font-size: 0.8em;
-  text-align: center;
 }
 
 .footer .row a:hover {
   color: #ffffff;
 }
 
-.footer .row ul {
-  display: flex;
-  justify-content: center; 
-  padding: 0;
-}
-
 .footer .row ul li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0px 30px;
 }
 
+
+
+/*///////////////////////////STYLE COMPTEUR/////////// */
 #connected-users {
   position: fixed;
   top: 20px;
@@ -243,6 +255,9 @@ img {
 #connected-users strong {
   font-size: 20px;
 }
+
+/* ////////////////////STYLE PAGE APPLICATION//////////////////// */
+
 
 .application {
   text-align: center;
@@ -278,13 +293,13 @@ img {
 
 @keyframes loading {
   0% {
-    width: 0;
+      width: 0;
   }
   50% {
-    width: 100%;
+      width: 100%;
   }
   100% {
-    width: 0;
+      width: 0;
   }
 }
 
@@ -292,6 +307,8 @@ img {
   color: #ffffff;
   font-size: 16px;
 }
+
+/* //////////STYLE PAGE CONTACT////////////// */
 
 .contact {
   margin-top: 5%;
@@ -302,7 +319,9 @@ img {
   background-color: rgba(38, 32, 32, 0.30);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
   overflow: hidden;
+  transform: translateY(-5%);
 }
 
 .contact h1 {
@@ -355,12 +374,14 @@ img {
   background-color: #c1c1c1;
 }
 
+/* ////////////////////COULEURS MESSAGES ENVOYE OU ERREUR */
+
 .success-message {
   color: white;
   background-color: green;
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .error-message {
@@ -368,14 +389,18 @@ img {
   background-color: red;
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
-.a_propos h1, p {
+/* ///////////STYLE PAGE A PROPOS/////////////////// */
+
+.a_propos h1,p {
   color: white;
   margin-left: 5%;
   margin-top: 5%;
 }
+
+/* //////////////STYLE PAGE TERMES & CONDITIONS//////// */
 
 .terms {
   padding: 20px;
@@ -402,43 +427,54 @@ img {
   color: #a19f9f;
 }
 
+/* Style pour les liens dans la section .terms */
 .terms a {
-  color: blue;
-  text-decoration: none;
+  color: blue; /* Couleur bleue pour les adresses e-mail */
+  text-decoration: none; /* Pour enlever le soulignement par défaut des liens */
 }
 
 .terms a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Ajouter un soulignement au survol */
 }
 
 .terms-logo {
-  margin-left: -50px;
+  margin-left: -50px; /* Déplacement vers la gauche */
 }
 
-#buttonposter {
+
+/* /////////////////////////////STYLE PAGE FORUM////////////////////////////////////////// */
+
+#buttonposter{
+    
   display: flex;
+  justify-content: end;
   justify-content: space-evenly;
   margin-top: 15%;
-}
 
-#body2 {
+
+}
+#body2{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 5%;
+  
 }
 
-#post {
+#post{
+  
   border: 2px solid;
   border-color: black;
   border-radius: 5px;
-  width: 25%;
+  width:25%;
   height: 400px;
+  
   color: white;
   margin: 0.5%;
   text-align: left;
-  word-wrap: break-word; 
+  word-wrap : break-word; 
   background-color: rgba(255,255,255,0.13);
+  
   border-radius: 10px;
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255,255,255,0.1);
@@ -446,7 +482,10 @@ img {
   padding: 50px 35px;
 }
 
-#postcom {
+
+
+#postcom{
+  
   border: 2px solid;
   border-color: black;
   border-radius: 5px;
@@ -455,42 +494,49 @@ img {
   color: white;
   margin: 0.5%;
   text-align: left;
-  word-wrap: break-word; 
+  word-wrap : break-word; 
 }
+
+
 
 .h2 {
   text-align: center;
   text-decoration: dashed;
   display: inline;
 }
-
 .h3 {
   text-align: left;
   display: inline;
+  
 }
 
-.p {
+.p{
   text-align: end;
 }
 
-.pcom {
+.pcom{
   text-align: center;
 }
-
 .h4 {
   text-align: center;
+  
+  
 }
-
 .h4b {
   text-align: center;
   justify-content: center;
-}
+  
+};
+
+
+/* ////////////////////style modal page forum////////////////////////////////////////////////////////////////////////// */
 
 .wrapper {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .wrapper a {
@@ -503,9 +549,11 @@ img {
   color: #d41d1d;
   font-family: 'Roboto', sans-serif;
   font-size: 50px;
+  
+  
+  
 }
-
-.wrapper a:hover {
+.wrapper a:hover{
   font-size: 40px;
 }
 
@@ -528,7 +576,7 @@ img {
 
 .modal:target {
   visibility: visible;
-  opacity: 1;
+  opacity: 100;
 }
 
 .modal__content {
@@ -537,38 +585,46 @@ img {
   border: 2px solid rgba(32, 32, 32, 0.1);
   box-shadow: 0 0 40px rgba(8,7,16,0.6);
   border-radius: 4px;
-  position: fixed;
+  position: fixed ;
   font-family: 'Roboto', sans-serif;
   width: 60%;
   height: 85%;
   max-width: 90%;
+  
+  
 }
 
-.modal__content h1 {
+.modal__content h1{
   color: white;
   text-align: start;
   margin-top: 2.5%;
   margin-left: 5%;
+  
 }
 
 .modal__content form {
-  margin-top: 5%;
-  width: 90%;
-  color: #ddd;
-  height: 50%;
-  margin-left: 5%;
-  text-align: center;
-}
+    margin-top: 5%;
+    
+    width: 90%;
+    color: #ddd;
+    height: 50%;
+    margin-left: 5%;
+    text-align: center;
+    
+    
 
+}
 .modal__content form textarea {
   width: 100%;
   height: 80%;
   resize: none;
   border-radius: 30px;
   padding: 15px;
+  
 }
 
 .modal__footer {
+  
   a {
     color: #585858;
   }
@@ -576,7 +632,6 @@ img {
     color: #d02d2c;
   }
 }
-
 .modal__close {
   position: absolute;
   font-size: 40px;
@@ -591,7 +646,6 @@ img {
   bottom: 25px;
   left: 25%;
 }
-
 
 .scroll-container {
   width: 30%;
@@ -613,84 +667,14 @@ img {
   margin: 0 0 10px;
 }
 
-/* /////////////PETIT TELEPHONE///////////// */
-@media (max-width: 360px) {
-  .contener_top {
-    height: 50px;
-  }
-
-  .contener_mid {
-    margin-top: 50px;
-    padding: 5px;
-  }
-
-  #nav-container {
-    width: 20%;
-  }
-
-  #nav-content {
-    width: 80%;
-  }
-
-  .contact {
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  #post {
-    width: 90%;
-    padding: 20px;
-    margin-left: 5%;
-  }
-
-  .wrapper a {
-    font-size: 30px;
-    padding: 10px;
-  }
-
-  .modalcontent {
-    width: 90%;
-    height: 70%;
-  }
-}
-
-/* ////////////TELEPHONE MOYENS//////// */
-@media (min-width: 361px) and (max-width: 768px) {
-  .contener_top {
-    height: 60px;
-  }
-
-  .contener_mid {
-    margin-top: 60px;
-    padding: 10px;
-  }
-
-  #nav-container {
-    width: 15%;
-  }
-
-  #nav-content {
-    width: 85%;
-  }
-
-  .contact {
-    width: 70%;
-    margin-left: 15%;
-  }
-
-  #post {
-    width: 70%;
-    padding: 30px;
-    margin-left: 15%;
-  }
-
-  .wrapper a {
-    font-size: 40px;
-    padding: 15px;
-  }
-
-  .modalcontent {
-    width: 80%;
-    height: 80%;
-  }
+.comblock {
+  width: 100%;
+  max-height: 10%; /* Hauteur maximale pour s'assurer que le contenu ne dépasse pas */
+  background-color: #000000b2;
+  color: white;
+  
+  font-size: 10px;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: auto; /* Ajoute une barre de défilement si nécessaire */
 }

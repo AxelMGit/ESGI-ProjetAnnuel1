@@ -32,11 +32,16 @@
 
 
         <div class="contener_mid">
-            <iframe id="chatbot" 
-                    src="chatbot.php"
-                    frameborder="0">
-            </iframe>
         </div>
+
+        <div id="rasa-chat-widget" 
+            data-websocket-url="http://localhost:5005"
+            data-close-on-outside-click
+            data-initial-payload="Bonjour !"
+            data-primary="#434343"
+            data-primary-highlight=""
+        ></div>
+        <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
 
 
         <div class="contener_bottom">

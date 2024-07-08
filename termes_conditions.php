@@ -20,7 +20,7 @@
         <div class="contener_mid"> 
             <section class="terms">
                 <h1>Termes & Conditions</h1>
-                <p>Date de dernière mise à jour : 23 Mai 2024</p>
+                <p>Date de dernière mise à jour : 08 Juillet 2024</p>
                 
                 <h2>1. Introduction</h2>
                 <p>Bienvenue sur notre site web. En utilisant notre site, vous acceptez de respecter et d'être lié par les termes et conditions suivants. Veuillez les lire attentivement.</p>
@@ -41,7 +41,7 @@
                 <p>Nous nous réservons le droit de modifier ces termes à tout moment. Les modifications seront effectives dès leur publication sur le site. Il est de votre responsabilité de vérifier régulièrement les mises à jour de ces termes.</p>
                 
                 <h2>7. Contactez-nous</h2>
-                <p>Si vous avez des questions concernant ces termes et conditions, veuillez nous contacter à l'adresse suivante : <a href="mailto:rideawaycontact@gmail.com">rideawaycontact@gmail.com</a>.</p>
+                <p>Si vous avez des questions concernant ces termes et conditions, veuillez nous contacter ici : <br><a href="contact.php"> > Forum < </a>
             </section>
         </div>
 

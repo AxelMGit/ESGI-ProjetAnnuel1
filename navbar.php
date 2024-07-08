@@ -7,7 +7,6 @@
     </div>
     <div id="nav-content" tabindex="0">
         <ul>
-            <li><a href="#0">Poster</a></li>
             <li><a href="ajouter.php">Forum</a></li>
             <li><a href="#0">Entretiens</a></li>
             <li><a href="#0">GPS moto</a></li>

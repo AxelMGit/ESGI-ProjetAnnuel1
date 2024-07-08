@@ -26,9 +26,9 @@
             </section>
         </div>
 
-        <div class="contener_bottom">
-            <?php include('footer.php'); ?>
-        </div>
-    </div>
+<div class="contener_bottom">
+    <?php include('footer.php'); ?>
+</div>
+
 </body>
 </html>

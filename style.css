@@ -302,7 +302,6 @@ img {
   background-color: rgba(38, 32, 32, 0.30);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255,255,255,0.1);
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
   overflow: hidden;
 }
 
@@ -361,7 +360,7 @@ img {
   background-color: green;
   padding: 10px;
   border-radius: 5px;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .error-message {
@@ -369,7 +368,7 @@ img {
   background-color: red;
   padding: 10px;
   border-radius: 5px;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .a_propos h1, p {
@@ -615,7 +614,7 @@ img {
 }
 
 /* /////////////PETIT TELEPHONE///////////// */
-@media (max-width: 480px) {
+@media (max-width: 360px) {
   .contener_top {
     height: 50px;
   }
@@ -656,7 +655,7 @@ img {
 }
 
 /* ////////////TELEPHONE MOYENS//////// */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 361px) and (max-width: 768px) {
   .contener_top {
     height: 60px;
   }

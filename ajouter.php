@@ -97,7 +97,7 @@
 
                 foreach ($res_requete1 as $key => $valeur1) {
                     $lastClass = ($key === array_key_last($res_requete1)) ? 'last-post' : '';
-                    echo '<a id="post">
+                    echo '<a id="post" href="detail.php?idpost='.$valeur1['id_post'].'">
                               <div class="'.$lastClass.'">
                                   <h3 class="h3">'.$valeur1['nom'].' '.$valeur1['prenom'].'</h3>' 
                                   .'<h4 class="h4">'.'"'.substr($valeur1['Contents'], 0, 100).'"</h4>'

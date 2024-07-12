@@ -5,6 +5,7 @@
 
 html {
   height: 100%;
+  width: 100%;
   background-color: #000000;
   background-image: url('img/bg1.jpg');
   background-position: fixed;
@@ -13,6 +14,9 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; 
+  overflow-x: hidden; 
+  
+  box-sizing: border-box; 
 }
 
 body {
@@ -20,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 }
 
 .container {
@@ -52,9 +57,18 @@ body {
   width: 100%;
   height: 15%;
   z-index: 1;
+  margin-top: 5%;
   
 }
-
+@media (min-width: 1920px) {
+  
+  .contener_bottom {
+    width: 100%;
+    height: 15%;
+    z-index: 1;
+    margin-top: 10%; 
+ }
+}
 
 /* ////////////////////////////////bmenu navigation //////////////////////////// */
 
@@ -498,6 +512,13 @@ img {
   padding-top: 5%;
   
 }
+.bodyrow{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
 
 #post{
   
@@ -687,33 +708,103 @@ img {
 
 .scroll-container {
   width: 30%;
-  height: 90%;
-  max-height: 650px;
   position: absolute;
-  top: 10%;
+  top: 4%;
   right: 0;
-  border: 1px solid #ccc;
-  overflow-y: scroll;
-  
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-
+  overflow: hidden; /* Masquer le défilement global */
+  z-index: 1; /* Assurez-vous que ce conteneur est au-dessus du contenu de la page */
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.13); /* Ajouter un fond pour le conteneur */
+  backdrop-filter: blur(10px); /* Effet de flou sur le fond */
+  border: 2px solid rgba(255, 255, 255, 0.1); /* Bordure pour le conteneur */
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6); /* Ombre pour le conteneur */
+}
+@media (min-width: 1920px) {
+  .scroll-container {
+    width: 30%; 
+    height: 80%;
+    top: 6%; 
+  }
+  
 }
 
-.scroll-content p {
-  margin: 0 0 10px;
+.scroll-content {
+  flex-grow: 1; 
+  overflow-y: auto;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+  
+}
+
+.scroll-content::-webkit-scrollbar {
+  display: none;  
+}
+
+.scrool_haut p {
+  margin: 0;
+}
+
+.scrool_bas {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background: rgba(255,255,255,0.13);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #0000006c;
+}
+
+.scroll-container textarea {
+  width: 90%;
+  height: 100%;
+  resize: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 15px;
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.scroll-container button {
+  align-self: flex-end;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 .comblock {
   width: 100%;
-  max-height: 10%; /* Hauteur maximale pour s'assurer que le contenu ne dépasse pas */
+  margin-top: 3px;
+  padding: 2px;
   background-color: #000000b2;
   color: white;
-  
   font-size: 10px;
   word-wrap: break-word;
   white-space: normal;
-  overflow: auto; /* Ajoute une barre de défilement si nécessaire */
+  overflow: auto;
 }
 
+.custom-button {
+  appearance: none;  
+  -webkit-appearance: none;  
+  -moz-appearance: none;  
+  margin-bottom: 2.5%;
+  background: none;  
+  border: none;  
+  padding: 0;  
+  cursor: pointer;  
+  font-size: 20px;  
+  color: inherit;  
+  text-decoration: none; 
+}
+
+.custom-button:hover {
+  color: #ff0000; 
+}

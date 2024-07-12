@@ -178,7 +178,7 @@
         };
         
         document.getElementById('uploadForm').addEventListener('submit', function(event) {
-           // window.close();
+           window.close();
         });
 
     </script>

@@ -107,7 +107,6 @@
                     if (!empty($valeur1['gpx_id'])) {
                         echo '<div id="map-' . $valeur1['id_post'] . '" class="map" style="height: 400px;"></div>';
                         echo '<script>loadGPXFile("' . $valeur1['gpx_id'] . '", "map-' . $valeur1['id_post'] . '");</script>';
-                        echo $valeur1['gpx_id'];
                     } else {
                         echo 'Aucun fichier GPX associé';
                     }

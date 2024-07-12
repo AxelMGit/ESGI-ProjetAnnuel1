@@ -539,6 +539,8 @@ img {
   border: 2px solid rgba(255,255,255,0.1);
   box-shadow: 0 0 40px rgba(8,7,16,0.6);
   padding: 50px 35px;
+
+  padding-bottom: 125px;
 }
 
 
@@ -614,6 +616,10 @@ img {
 }
 .wrapper a:hover{
   font-size: 40px;
+}
+
+.map-div{
+  padding-bottom: 50px;
 }
 
 .modal {

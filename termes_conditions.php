@@ -41,7 +41,7 @@
                 <p>Nous nous réservons le droit de modifier ces termes à tout moment. Les modifications seront effectives dès leur publication sur le site. Il est de votre responsabilité de vérifier régulièrement les mises à jour de ces termes.</p>
                 
                 <h2>7. Contactez-nous</h2>
-                <p>Si vous avez des questions concernant ces termes et conditions, veuillez nous contacter ici : <br><a href="contact.php"> > Forum < </a>
+                <p>Si vous avez des questions concernant ces termes et conditions, veuillez nous contacter ici : <br><a href="contact.php"> > Assistance < </a>
             </section>
         </div>
 

@@ -8,7 +8,7 @@
     <div id="nav-content" tabindex="0">
         <ul>
             <li><a href="ajouter.php">Forum</a></li>
-            <li><a href="#0">Entretiens</a></li>
+            <li><a href="garage.php">Mon garage</a></li>
             <li><a href="#0">GPS moto</a></li>
             <li><a href="logout.php">Déconnexion</a></li>
         </ul>

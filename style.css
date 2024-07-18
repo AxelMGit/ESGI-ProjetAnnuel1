@@ -804,11 +804,14 @@ img {
   bottom: 0;
   width: 100%;
   height: 10%;
-  background: rgba(255,255,255,0.13);
-  backdrop-filter: blur(10px);
+  max-height:50px;
+  background: rgb(0, 0, 0);
+  backdrop-filter: blur(1000px);
   display: flex;
   flex-direction: row;
   border-top: 1px solid #0000006c;
+  padding: 10px;
+  color: white;
 }
 
 .scroll-container textarea {
@@ -832,17 +835,7 @@ img {
   cursor: pointer;
 }
 
-.comblock {
-  width: 100%;
-  margin-top: 3px;
-  padding: 2px;
-  background-color: #000000b2;
-  color: white;
-  font-size: 10px;
-  word-wrap: break-word;
-  white-space: normal;
-  overflow: auto;
-}
+
 
 .custom-button {
   appearance: none;  
@@ -926,3 +919,69 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background: #333;
 }
+
+/* //////////////////////////////////////commentaire forum///////////////////////////////////////// */
+.comblock {
+  width: 100%;
+  margin-top: 3px;
+  padding: 10px;
+  background-color: #000000b2;
+  color: white;
+  font-size: 10px;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: auto;
+}
+
+.comblock h2 {
+  text-align: left;
+  text-decoration: dashed;
+  display: inline;
+  font-family: 'Poppins', sans-serif;
+}
+.comblock h3 {
+  text-align: left;
+  display: inline;
+  
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 15px;
+}
+
+.comblock p{
+  text-align: left;
+  line-height: 0;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+
+.comblock h4 {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 3%;
+  font-size: 13px;
+  
+  
+  
+}
+/* /////////////////////////////////////////page garage////////////////////////////////////////////////////////// */
+.classdialoguegarage{
+  width: 50%;
+  height: 400px;
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  
+  background-color: rgba(38, 32, 32, 0.70);
+  
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  overflow: hidden;
+  
+}
+

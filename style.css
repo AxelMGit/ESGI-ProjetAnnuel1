@@ -919,3 +919,13 @@ img {
   overflow: hidden;
   
 }
+
+.dialog_gauche{
+width: 50%;
+height: 100%;
+}
+
+.dialog_droite{
+  width: 50%;
+  height: 100%;
+}

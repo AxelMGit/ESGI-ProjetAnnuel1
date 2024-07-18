@@ -73,8 +73,9 @@
                                 foreach ($res_requete2 as $key2 => $valeur2) {
                                     
                                     echo '<div class="comblock"><h3 class="h3">'.$valeur2['nom'].' '.$valeur2['prenom'].'</h3>' 
-                                        .'<h4 class="h4">'.'"'.substr($valeur2['Contents'], 0, 100).'"</h4>'
-                                        .'<p class="p">'.$valeur2['CreationTimestamp'].'</p></div>';
+                                    .'<p class="p">'.$valeur2['CreationTimestamp'].'</p>'
+                                    .'<h4 class="h4">'.substr($valeur2['Contents'], 0, 100).'</h4></div>';
+                                        
                                 }
                             ?>
                         </div>

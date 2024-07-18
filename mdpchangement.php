@@ -24,6 +24,10 @@
         $ex_requete2 = $pdo->prepare($requete2);
         $ex_requete2->execute([':email' => $email, ':mdp' => $hashed_password]);
 
+        unset($_SESSION['verifcodeoublie']);
+        unset($_SESSION['emailoublie']);
+        
+
         header('Location: index.php');
         exit();
 

@@ -32,7 +32,6 @@ use PHPMailer\PHPMailer\Exception;
         <p>Nous serions ravis de répondre à vos questions et d'entendre vos suggestions. Veuillez remplir le formulaire ci-dessous pour nous contacter.</p>
         <br>
 
-        <!-- PHP Mail Handling -->
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
@@ -74,7 +73,6 @@ use PHPMailer\PHPMailer\Exception;
         }
         ?>
 
-        <!-- Contact Form -->
         <form action="contact.php" method="post">
             <div class="form-group">
                 <label for="name">Nom :</label>

@@ -861,3 +861,68 @@ img {
 .custom-button:hover {
   color: #ff0000; 
 }
+
+/* //////////STYLE PAGE PROFIL ///////// */
+
+.profile-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-icon img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 250%;
+}
+
+.profile-menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.profile-menu.visible {
+  display: block;
+}
+
+.profile-menu h2 {
+  margin-top: 0;
+  color: rgb(0, 0, 0);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  background: #434343;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #333;
+}

@@ -526,7 +526,7 @@ img {
   border-color: black;
   border-radius: 5px;
   width:25%;
-  height: 400px;
+  height: 350px;
   
   color: white;
   margin: 0.5%;
@@ -556,30 +556,44 @@ img {
   margin: 0.5%;
   text-align: left;
   word-wrap : break-word; 
+  font-family: 'Poppins', sans-serif;
 }
 
 
 
 .h2 {
-  text-align: center;
+  text-align: left;
   text-decoration: dashed;
   display: inline;
+  font-family: 'Poppins', sans-serif;
 }
 .h3 {
   text-align: left;
   display: inline;
-  
+  line-height: 0.01;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .p{
-  text-align: end;
+  text-align: left;
+  line-height: 0;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 7px;
+  margin-left: 12.5%;
+  font-size: 13px;
 }
 
 .pcom{
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  
 }
 .h4 {
-  text-align: center;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 15%;
+  margin-left: 7.5%;
   
   
 }

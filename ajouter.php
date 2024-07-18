@@ -6,6 +6,7 @@
     <title>Forum</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
         var maps = {}; // Store references to all maps
@@ -99,9 +100,10 @@
                     $lastClass = ($key === array_key_last($res_requete1)) ? 'last-post' : '';
                     echo '<a id="post" href="detail.php?idpost='.$valeur1['id_post'].'">
                               <div class="'.$lastClass.'">
-                                  <h3 class="h3">'.$valeur1['nom'].' '.$valeur1['prenom'].'</h3>' 
-                                  .'<h4 class="h4">'.'"'.substr($valeur1['Contents'], 0, 100).'"</h4>'
-                                  .'<p class="p">'.$valeur1['CreationTimestamp'].'</p>';
+                                  <h3 class="h3"><img style ="width: 35px;color:white;margin-right:10px;"; src="img/profil-de-lutilisateur3.png">'.$valeur1['nom'].' '.$valeur1['prenom'].'</h3>' 
+                                  .'<p class="p">'.$valeur1['CreationTimestamp'].'</p>'
+                                  .'<h4 class="h4">'.substr($valeur1['Contents'], 0, 100).'</h4>';
+                                  
 
                     // Vérifier si un fichier GPX est associé à ce post
                     if (!empty($valeur1['gpx_id'])) {

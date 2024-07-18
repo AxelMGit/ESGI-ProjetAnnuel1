@@ -154,17 +154,36 @@
                 <label >Mail :</label>
                 <input type="text" placeholder="exemple@mail.com" name="mail">
 
-                <label>Mot de passe :</label>
-                <input type="password" placeholder="Mot de passe :" name="mdp">
                 
+                <div class="password-containerindex">
+                    <label>Mot de passe :</label>
+                    <input type="password" placeholder="Mot de passe :" id="mdp" name="mdp">
+                    <button type="button" onclick="togglePassword('mdp')">
+                        <i class="fa fa-eye"></i>
+                    </button>
+                </div>
                 <button class="bttconnexion" type="submit">Se connecter</button>
             </form>
+            
+               <a href="mdpoublie.php"><button class="bttconnexionoublie" type="submit">Mot de passe oublié ?</button></a>
+            
         </div>
     
 
         <div class="contener_bottom">
             <?php include('footer.php'); ?>
         </div>
+
+    <script>
+        function togglePassword(id) {
+            var input = document.getElementById(id);
+            if (input.type === "password") {
+                input.type = "text";
+            } else {
+                input.type = "password";
+            }
+        }
+    </script>
 </body>
 </html>
 

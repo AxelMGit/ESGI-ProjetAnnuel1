@@ -1,5 +1,24 @@
 /* /////////////////////////button haut droite connexion/inscription/////////////////////////////// */
-
+.password-containerindex button {
+    margin-top: -35px;
+    position: absolute;
+    right: 125px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 5px;
+}
+.password-containersignup button {
+    margin-top: -35px;
+    position: absolute;
+    right: 85px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 5px;
+}
 .button_con_ins {
     cursor: pointer;
     font-size: 17px;
@@ -154,7 +173,72 @@ input{
     
 }
 
+/* ///////////////////////////mdp oublié///////////////////////////// */
+.password-container button {
+    margin-top: -50px;
+    position: absolute;
+    right: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 5px;
+}
+.bttconnexionoublie{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    width: 20%;
+    height: 4%;
+    background-color: #f8c5c5;
+    color: #080710;
+    
+    font-size: 18px;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+}
+@media (min-width: 1920px) {
+  
+    .bttconnexionoublie{
+        position: absolute;
+        top: 65%;
+        left: 40%;
+        width: 20%;
+        height: 4%;
+        background-color: #f8c5c5;
+        color: #080710;
+        
+        font-size: 18px;
+        
+        border-radius: 5px;
+        cursor: pointer;
+        
+        
+    }
+  }
 
+.bttconnexionoublie:hover{
+    background-color: #c1c1c1;
+}
+.classdialogueoublie{
+    width: 70%;
+    height: 90%;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    
+    background-color: rgba(38, 32, 32, 0.70);
+    
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    overflow: hidden;
+    
+  }
 /* page log in ///////////////////////////////////////////////////////////// */
 .bttconnexion{
     

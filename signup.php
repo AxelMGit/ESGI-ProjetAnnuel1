@@ -95,8 +95,14 @@
                     <div class="formsign_droite">
                         <label>Mail :</label>
                         <input type="text" placeholder="exemple@mail.com" name="mail">
-                        <label>Mot de passe :</label>
-                        <input type="password" placeholder="Mot de passe :" name="mdp">
+                        
+                        <div class="password-containersignup">
+                            <label>Mot de passe :</label>
+                            <input type="password" placeholder="Mot de passe :" id="mdp" name="mdp">
+                            <button type="button" onclick="togglePassword('mdp')">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <button class="bttconnexion" type="submit">S'inscrire</button>
@@ -107,5 +113,15 @@
             <?php include('footer.php'); ?>
         </div>
     </div>
+    <script>
+        function togglePassword(id) {
+            var input = document.getElementById(id);
+            if (input.type === "password") {
+                input.type = "text";
+            } else {
+                input.type = "password";
+            }
+        }
+    </script>
 </body>
 </html>

@@ -54,10 +54,11 @@
                     
                     foreach ($res_requete1 as $key => $valeur1) {
                         
-                        echo '<div id="post" style="margin-left:20%;margin-top:3%" ><h3 class="h3">'.$valeur1['nom'].' '.$valeur1['prenom'].'</h3>' 
-                            .'<h4 class="h4">'.'"'.substr($valeur1['Contents'], 0, 100).'"</h4>'
-                            .'<p class="p">'.$valeur1['CreationTimestamp'].'</p></div>';
-                    }
+                        echo '<div id="post" style="margin-left:20%;margin-top:3%" ><h3 class="h3"><img style ="width: 35px;color:white;margin-right:10px;"; src="img/profil-de-lutilisateur3.png">'.$valeur1['nom'].' '.$valeur1['prenom'].'</h3>' 
+                            .'<p class="p">'.$valeur1['CreationTimestamp'].'</p>'
+                            .'<h4 class="h4">'.substr($valeur1['Contents'], 0, 100).'</h4></div>';
+                            
+                    };
                 ?>
             
                 <div class="scroll-container">

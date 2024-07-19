@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Forum avec Cartes GPX</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <style>
         #map {

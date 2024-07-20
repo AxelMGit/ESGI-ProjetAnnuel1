@@ -889,25 +889,25 @@ img {
   color: rgb(0, 0, 0);
 }
 
-.form-group {
+.custom-form-group  {
   margin-bottom: 15px;
 }
 
-.form-group label {
+.custom-form-group label {
   display: block;
   margin-bottom: 5px;
   color: rgb(0, 0, 0);
 }
 
-.form-group input[type="email"],
-.form-group input[type="password"],
-.form-group input[type="file"] {
+.custom-form-group input[type="email"],
+.custom-form-group input[type="password"],
+.custom-form-group input[type="file"] {
   width: 100%;
   padding: 8px;
   border-radius: 4px;
 }
 
-button[type="submit"] {
+.custom-button[type="submit"] {
   padding: 10px 15px;
   background: #434343;
   color: #fff;
@@ -916,9 +916,10 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+.custom-button[type="submit"]:hover {
   background: #333;
 }
+
 
 /* //////////////////////////////////////commentaire forum///////////////////////////////////////// */
 .comblock {

@@ -87,6 +87,7 @@
         </div>
 
         <div class="contener_mid">
+
             <div id="body2">
                 <?php 
                 $requete1 = 'SELECT p.*, u.nom, u.prenom 

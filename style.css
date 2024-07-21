@@ -459,6 +459,11 @@ img {
   color: white;
 }
 
+.intro_text {
+  color: #ffffff; /* Changer la couleur selon vos préférences */
+  font-size: 2em; /* Augmenter la taille du texte */
+  margin-bottom: 20px; /* Ajouter un espace en bas pour plus de lisibilité */
+}
 
 /* //////////////STYLE PAGE TERMES & CONDITIONS//////// */
 

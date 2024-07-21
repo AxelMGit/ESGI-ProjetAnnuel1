@@ -1,26 +1,55 @@
-<div class="profile-menu" id="profileMenu">
-    <h2>Mon Profil</h2>
-    <form id="profileForm">
-        <div class="custom-form-group">
-            <label for="profilePic">Changer la photo de profil :</label>
-            <input type="file" id="profilePic" accept="image/*">
+<div class="user-profile-menu">
+  <img src="img/icon_profil.png" alt="Photo de profil" class="user-profile-menu__image" onclick="toggleProfileMenu()">
+  <div class="user-profile-menu__content" id="profileMenu">
+    <div class="user-card">
+      <img src="img/profil-de-lutilisateur3.png" alt="Photo de profil" class="user-card__image">
+      <p class="user-card__name">Pseudo</p>
+      <div class="user-grid-container">
+        <div class="user-grid-child-posts">
+          nombre de posts
         </div>
-        <div class="custom-form-group">
-            <label for="email">Changer l'email :</label>
-            <input type="email" id="email" value="">
+        <div class="user-grid-child-followers">
+          nombre de likes
         </div>
-        <div class="custom-form-group">
-            <label for="password">Changer le mot de passe :</label>
-            <input type="password" id="password" value="">
-        </div>
-        <button type="submit">Enregistrer les modifications</button>
-    </form>
+      </div>
+      <button class="user-card__button user-draw-border">Abonnés</button>
+      <button class="user-card__button user-draw-border">Conversation</button>
+
+    <button class="user-card__button user-card-gear-button" onclick="editProfile()">
+        <img src="img/gear-icon.png" alt="Edit Profile" class="user-card__icon">
+    </button>
+
+    </div>
+  </div>
 </div>
 
-    <script>
-       
-        document.getElementById('profileMenuToggle').addEventListener('click', function() {
-            var profileMenu = document.getElementById('profileMenu');
-            profileMenu.classList.toggle('visible');
-        });
-    </script>
+<div id="editProfileModal" class="user-modal">
+  <div class="user-modal-content">
+    <span class="user-modal-close" onclick="closeEditProfileModal()">&times;</span>
+    <form>
+      <label for="username">Nouveau Pseudo :</label>
+      <input type="text" id="username" name="username" value=""><br>
+      <label for="email">Nouvel Email :</label>
+      <input type="email" id="email" name="email" value=""><br>
+      <label for="password">Nouveau Mot de passe :</label>
+      <input type="password" id="password" name="password"><br>
+      <button type="submit" class="user-card__button user-draw-border">Sauvegarder</button>
+    </form>
+  </div>
+</div>
+
+
+<script>
+function toggleProfileMenu() {
+  var menu = document.getElementById("profileMenu");
+  menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+}
+
+function editProfile() {
+  document.getElementById("editProfileModal").style.display = "block";
+}
+
+function closeEditProfileModal() {
+  document.getElementById("editProfileModal").style.display = "none";
+}
+</script>

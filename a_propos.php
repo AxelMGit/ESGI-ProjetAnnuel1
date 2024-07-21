@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['id_user'])) {
+    header('Location: index.php');
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -18,6 +27,8 @@
         <div class="contener_mid">
             <section class="a_propos">
                 <h1>Pourquoi avons-nous créé ce site ?</h1>
+                <p class="intro_text">Nous sommes trois étudiants motards de 18, 19 et 20 ans. Ce site est notre projet annuel. Nous avons décidé de le créer pour simplifier notre vie et pour favoriser la cohésion avec d'autres motards.</p>
+                <div class="about_boxes">
                 <div class="about_boxes">
                     <div class="about_box">
                         <h2>Léo-Paul</h2>

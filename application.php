@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['id_user'])) {
+    header('Location: index.php');
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +17,7 @@
 </head>
 <body>
     <?php include('navbar.php');?>
+    
 
     <div class="container">
         <div class="contener_top">

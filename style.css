@@ -1154,8 +1154,23 @@ height: 100%;
     font-size: 12px;
   }
 
+
   .pcom {
     font-size: 14px;
+
+  .map_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px;
+    margin: 500px;
+}
+
+  .frame_map {
+    flex: 1;
+    margin: 100px 100px 100px 100px;
+    padding: 100px 100px 100px 100px;
+
   }
 
   .h4 {

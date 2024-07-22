@@ -45,6 +45,14 @@
 
         <div class="contener_bottom">
             <?php include('footer.php'); ?>
+            <div style="position: relative;" id="rasa-chat-widget" 
+            data-websocket-url="http://localhost:5005"
+            data-close-on-outside-click
+            data-initial-payload="Bonjour !"
+            data-primary="#434343"
+            data-primary-highlight=""
+            ></div>
+            <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
         </div>
     </div>
 

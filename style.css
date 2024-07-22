@@ -1171,10 +1171,18 @@ height: 100%;
     width: 90%;
   }
 
-  #ww_18eb57279f057 {
-    width: 90%;
-    margin: auto;
-    float: none;
+  .map_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px;
+    margin: 500px;
+}
+
+  .frame_map {
+    flex: 1;
+    margin: 100px 100px 100px 100px;
+    padding: 100px 100px 100px 100px;
   }
 
   /* General responsive styles for text and images */

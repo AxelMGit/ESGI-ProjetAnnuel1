@@ -40,7 +40,7 @@
             <h3 style="margin-top: 3%; margin-left: 28%; position: absolute; color: white; word-wrap: break-word; font-family: 'Poppins', sans-serif;">Balade de la semaine</h3>
             <div class="map" id="map" style="margin-left:150px; display:inline-block;"></div>
 
-            <div style="width:300px; height:400px; margin-right:25px; display:inline-block;" id="ww_18eb57279f057" v='1.3' loc='id' a='{"t":"responsive","lang":"fr","sl_lpl":1,"ids":["wl3992"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#455A64","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#0000000a","sl_tof":"6"}'>Plus de prévisions: <a href="https://oneweather.org/fr/paris/30_jours/" id="ww_18eb57279f057_u" target="_blank">Meteo a 30 jours</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_18eb57279f057"></script>
+            <div style="width:300px; margin-top: 5%; height:auto; margin-right:25px; display:inline-block;" id="ww_18eb57279f057" v='1.3' loc='id' a='{"t":"responsive","lang":"fr","sl_lpl":1,"ids":["wl3992"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#455A64","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#0000000a","sl_tof":"5"}'>Plus de prévisions: <a href="https://oneweather.org/fr/paris/30_jours/" id="ww_18eb57279f057_u" target="_blank">Meteo a 30 jours</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_18eb57279f057"></script>
         </div>
 
         <div class="contener_bottom">

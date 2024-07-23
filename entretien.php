@@ -124,19 +124,22 @@
                             ?>
                             <tr class="<?= htmlspecialchars($status) ?>">
                                 
-                                <td style="color:<?php $statuscouleur ?>;"><?= htmlspecialchars($entretien['description']) ?></td>
-                                <td style="color:<?php $statuscouleur ?>;"><?= htmlspecialchars($entretien['interval_km']);echo ' km' ?></td>
-                                <td style="color:<?php $statuscouleur ?>;"><?= htmlspecialchars($entretien['derniere_date_entretien']) ?></td>
-                                <td style="color:<?php $statuscouleur ?>;"><?= htmlspecialchars($entretien['dernier_km_entretien']);echo ' km' ?></td>
-                                <td style="color:<?php $statuscouleur ?>;"><?= ucfirst(htmlspecialchars($status)) ?></td>
-                                <td>
-                                    <form method="post" action="entretien.php?id_user_moto=<?= htmlspecialchars($id_user_moto) ?>">
-                                        <input type="hidden" name="id_entretien_done" value="<?= htmlspecialchars($entretien['id_entretien']) ?>">
-                                        <label for="kilometrage_done">Km:</label>
-                                        <input type="number" id="kilometrage_done" name="kilometrage_done" required>
-                                        <button type="submit">Confirmer</button>
-                                    </form>
-                                </td>
+                            <tr class="<?= htmlspecialchars($status) ?>">
+                            <td style="background-color:<?= $statuscouleur ?>;"><?= htmlspecialchars($entretien['description']) ?></td>
+                            <td style="color:<?= $statuscouleur ?>;"><?= htmlspecialchars($entretien['interval_km']) . ' km' ?></td>
+                            <td style="color:<?= $statuscouleur ?>;"><?= htmlspecialchars($entretien['derniere_date_entretien']) ?></td>
+                            <td style="color:<?= $statuscouleur ?>;"><?= htmlspecialchars($entretien['dernier_km_entretien']) . ' km' ?></td>
+                            <td style="color:<?= $statuscouleur ?>;"><?= ucfirst(htmlspecialchars($status)) ?></td>
+                            <td>
+                                <form method="post" action="entretien.php?id_user_moto=<?= htmlspecialchars($id_user_moto) ?>">
+                                    <input type="hidden" name="id_entretien_done" value="<?= htmlspecialchars($entretien['id_entretien']) ?>">
+                                    <label for="kilometrage_done">Km:</label>
+                                    <input type="number" id="kilometrage_done" name="kilometrage_done" required>
+                                    <button type="submit">Confirmer</button>
+                                </form>
+                            </td>
+</tr>
+                                
                             </tr>
                             <?php endforeach; ?>
                         </tbody>

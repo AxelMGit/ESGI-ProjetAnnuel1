@@ -577,6 +577,13 @@ img {
   font-family: 'Poppins', sans-serif;
 }
 
+.input_gpx {
+  color: white;
+  margin: 0.5%;
+  text-align: left;
+  word-wrap : break-word; 
+  font-family: 'Poppins', sans-serif;
+}
 
 
 .h2 {

@@ -575,6 +575,13 @@ img {
   font-family: 'Poppins', sans-serif;
 }
 
+.input_gpx {
+  color: white;
+  margin: 0.5%;
+  text-align: left;
+  word-wrap : break-word; 
+  font-family: 'Poppins', sans-serif;
+}
 
 
 .h2 {
@@ -1087,6 +1094,7 @@ img {
   border: 2px solid rgba(255,255,255,0.1);
   box-shadow: 0 0 40px rgba(8,7,16,0.6);
   overflow: hidden;
+  color: white;
   
 }
 
@@ -1100,10 +1108,120 @@ height: 100%;
   height: 100%;
 }
 
+
 .contener_top img {
   vertical-align: middle;
   height: auto;
   width: 30%;
+}
+
+.classdialoguegarage input{
+  height: 10%;
+  min-height: 50px;
+  width: 80%;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 3px;
+  margin-top: 5%;
+
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.classdialoguegarage select{
+   height: 10%;
+   min-height: 50px;
+   width: 80%;
+   background-color: rgba(255,255,255,0.07);
+   border-radius: 3px;
+   margin-top: 5%;
+   color: white;
+ 
+ 
+   font-size: 14px;
+   font-weight: 300;
+}
+ .classdialoguegarage option {
+  
+  
+  color: black;
+
+
+  
+}
+
+
+ .classdialoguegarageentretien {
+  width: 70%;
+  height: 400px;
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  
+  background-color: rgba(38, 32, 32, 0.70);
+  
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  overflow: hidden;
+  color: white;
+}
+
+.classdialoguegarageentretien table {
+  border: 1px solid white;
+  color: white;
+  max-height: 100%;
+  overflow-y: auto;
+  width: 100%;
+}
+.classdialoguegarageentretien table th {
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  color: white;
+  max-height: 100%;
+  overflow-y: auto;
+}
+.classdialoguegarageentretien table td {
+  
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  color: white;
+  max-height: 100%;
+  overflow-y: auto;
+}
+.classdialoguegarageentretien button {
+  
+  width:60px;
+  padding: 8px;
+  
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.classdialoguegarageentretien input {
+  
+  height: 10%;
+  min-height: 35px;
+  width: 50%;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 7px;
+  border: 1px solid rgb(45, 45, 45);
+  color: white;
+  
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.classdialoguegarageentretien .modal-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
 }
 
 
@@ -1422,5 +1540,9 @@ a {
   color: currentColor;
   transition: .2s ease-in-out;
 }
+
+  .footer ul li {
+    margin: 5px 0;
+  }
 
 }

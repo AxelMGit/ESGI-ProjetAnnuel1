@@ -40,7 +40,7 @@ if (!isset($_SESSION['id_user'])) {
                     </div>
                     <div class="about_box">
                         <h2>Axel</h2>
-                        <p></p>
+                        <img style ="width: 250px"; src="img/cbf.png">
                     </div>
                 </div>
             </section>

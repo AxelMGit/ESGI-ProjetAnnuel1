@@ -243,8 +243,6 @@ img {
   width: 100%;
   opacity: 0.75;
   height: 100%;
-  
-  
 }
 
 .footer .row {
@@ -460,9 +458,9 @@ img {
 }
 
 .intro_text {
-  color: #ffffff; /* Changer la couleur selon vos préférences */
-  font-size: 2em; /* Augmenter la taille du texte */
-  margin-bottom: 20px; /* Ajouter un espace en bas pour plus de lisibilité */
+  color: #ffffff; 
+  font-size: 2em; 
+  margin-bottom: 20px; 
 }
 
 /* //////////////STYLE PAGE TERMES & CONDITIONS//////// */
@@ -492,7 +490,7 @@ img {
   color: #a19f9f;
 }
 
-/* Style pour les liens dans la section .terms */
+
 .terms a {
   text-decoration: none;
   font-weight: bold;
@@ -504,7 +502,7 @@ img {
 }
 
 .terms-logo {
-  margin-left: -50px; /* Déplacement vers la gauche */
+  margin-left: -50px; 
 }
 
 
@@ -713,7 +711,6 @@ img {
   color: #333;
   margin: 0 auto;
   padding: 20px;
-  background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
@@ -749,7 +746,7 @@ img {
 }
 
 .modal__content form a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
@@ -772,7 +769,7 @@ img {
 .modal__close {
   position: absolute;
   font-size: 40px;
-  top: 10px;
+  top: 0px;
   right: 10px;
   color: #bd1616;
   text-decoration: none;
@@ -1112,6 +1109,12 @@ height: 100%;
 }
 
 
+.contener_top img {
+  vertical-align: middle;
+  height: auto;
+  width: 30%;
+}
+
 .classdialoguegarage input{
   height: 10%;
   min-height: 50px;
@@ -1223,70 +1226,55 @@ height: 100%;
 
 
 
-
 /* ////////////////////////////////////RESPONSIVEEEEEEE/////////////////////////// */
 
-@media (min-width: 1920px) {
-  .contener_bottom {
-    width: 100%;
-    height: 15%;
-    z-index: 1;
-    margin-top: 10%;
-  }
-}
 
-@media (max-width: 768px) {
-  .contener_top {
+/* ***************POUR LA PAGE FORUM********** */
+
+@media (max-width: 390px) {
+  #buttonposter {
     flex-direction: column;
-    height: auto;
-    padding: 10px;
-  }
-
-  .contener_mid {
+    align-items: center;
     margin-top: 10%;
   }
 
-  #map {
-    width: 100%;
-    margin-left: 0;
-    padding-bottom: 500px;
-    margin-bottom: 500px;
+  #body2 {
+    padding-top: 2%;
   }
 
-  .contact,
-  .a_propos {
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  .about_boxes {
+  .bodyrow {
     flex-direction: column;
     align-items: center;
   }
 
-  .about_box {
-    width: 90%;
-    margin-bottom: 10px;
-  }
-
-  .scroll-container {
-    width: 100%;
+  #post {
+    width: 80%;
     height: auto;
-    top: auto;
-    bottom: 0;
-    right: 0;
+    padding: 20px;
+    margin: -5%;
+    margin-top: 20%;
   }
 
-  .modal__content {
+  #postcom {
     width: 90%;
-    height: auto;
   }
 
-  /* Adjustments for map and weather widget */
-  .map {
-    margin: auto;
-    width: 90%;
+  .h2, .h3, .p {
+    margin-left: 0;
+    text-align: center;
   }
+
+  .h3 {
+    font-size: 15px;
+  }
+
+  .p {
+    font-size: 12px;
+  }
+
+
+  .pcom {
+    font-size: 14px;
 
   .map_container {
     display: flex;
@@ -1300,99 +1288,258 @@ height: 100%;
     flex: 1;
     margin: 100px 100px 100px 100px;
     padding: 100px 100px 100px 100px;
+
   }
 
-  /* General responsive styles for text and images */
-  h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
+  .h4 {
     text-align: center;
+    margin: 5% 0;
   }
 
-  img {
-    width: 50%;
+  .h4b {
+    text-align: center;
+    justify-content: center;
   }
 
-  .contact .form-group input,
-  .contact .form-group textarea,
-  .contact .form-group button {
-    font-size: 1em;
+  .wrapper {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: -7%;
+    margin-bottom: 15%;
   }
 
-  .contact .form-group {
-    margin-bottom: 10px;
+  .wrapper a {
+    font-size: 24px;
+    padding: 10px 20px;
   }
 
-  /* Responsive footer */
-  .footer {
+  .modal {
+    width: 90%;
+    left: 5%;
+    height: auto;
+  }
+
+  .modal__content {
+    width: 100%;
+    height: auto;
+    top: 35%;
+  }
+
+  .modal__content h1 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .modal__content form {
+    width: 100%;
     padding: 10px;
   }
 
-  .footer .row ul li {
-    margin: 0 15px;
+  .modal__content form textarea {
+    height: 100px;
+    font-size: 14px;
   }
 
-  .application {
-    padding: 20px;
+  .modal__content form button {
+    padding: 10px 0;
+    font-size: 14px;
   }
 
-  .application h1 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+  .fixed-bottom-right {
+    left: 5%;
   }
 
-  .application p {
-    font-size: 1em;
-  }
-
-  .terms {
-    padding: 20px;
-    margin: 20px 10px;
-  }
-
-  .terms h1 {
-    font-size: 1.5em;
-  }
-
-  .terms h2 {
-    font-size: 1.2em;
-  }
-
-  .terms p {
-    font-size: 1em;
-  }
-
-  /* Footer specific for small screens */
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer .footer-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .scroll-container {
     width: 100%;
+    position: relative;
+    top: 0;
+    height: auto;
   }
 
-  .footer .footer-group {
-    width: 45%;
-    display: flex;
-    justify-content: flex-start;
+  .scroll-content {
+    height: auto;
   }
 
-  .footer .footer-group.right {
-    justify-content: flex-end;
+  .scrool_bas {
+    height: auto;
+    padding: 5px;
   }
 
-  .footer ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  .scroll-container textarea {
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
   }
+
+  .scroll-container button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .custom-button {
+    font-size: 16px;
+    margin-bottom: 5%;
+  }
+
+.contener_top img {
+  vertical-align: middle;
+  height: auto;
+  width: 30%;
+  margin-left: 36%;
+}
+
+#post img{
+  vertical-align: middle;
+  height: auto;
+  width: 30%;
+}
+
+.scroll-container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  height: auto;
+ }
+
+#nav-container {
+  position: fixed;
+  height: 100vh;
+  width: 30%;
+  pointer-events: none;
+  z-index: 1;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-weight: 600;
+  letter-spacing: .03em;
+  color: #ffffff;
+}
+  
+#nav-container:focus-within .bg {
+  visibility: visible;
+  opacity: .6;
+}
+  
+#nav-container * {
+  visibility: visible;
+}
+  
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.945);
+  backdrop-filter: blur(100px);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+  z-index: -1; /* Ensures that it stays behind the navigation */
+}
+  
+.button {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2; /* Make sure the button is above the blur background */
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  height: 70px;
+  width: 30px;
+  cursor: pointer;
+  pointer-events: auto;
+  margin-left: 25px;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+  
+.icon-bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #ffffff;
+  transition: .3s;
+}
+  
+.icon-bar + .icon-bar {
+  margin-top: 5px;
+}
+  
+#nav-container:focus-within .button {
+  pointer-events: none;
+}
+  
+#nav-container:focus-within .icon-bar:nth-of-type(1) {
+  transform: translate3d(0, 8px, 0) rotate(45deg);
+}
+  
+#nav-container:focus-within .icon-bar:nth-of-type(2) {
+  opacity: 0;
+}
+  
+#nav-container:focus-within .icon-bar:nth-of-type(3) {
+  transform: translate3d(0, -8px, 0) rotate(-45deg);
+}
+  
+#nav-content {
+  margin-top: 70px;
+  padding: 20px;
+  width: 90%;
+  max-width: 207px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 70px);
+  pointer-events: auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateX(-100%);
+  transition: transform .3s;
+  will-change: transform;
+  contain: paint;
+}
+  
+#nav-content ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+  
+#nav-content li a {
+  padding: 10px 5px;
+  display: block;
+  text-transform: uppercase;
+  transition: color .1s;
+}
+  
+#nav-content li a:hover {
+  color: #ef4023;
+}
+  
+#nav-content li:not(.small) + .small {
+  margin-top: auto;
+}
+  
+#nav-container:focus-within #nav-content {
+  transform: none;
+}
+  
+a,
+a:visited,
+a:focus,
+a:active,
+a:link {
+  text-decoration: none;
+  outline: 0;
+}
+  
+a {
+  color: currentColor;
+  transition: .2s ease-in-out;
+}
 
   .footer ul li {
     margin: 5px 0;

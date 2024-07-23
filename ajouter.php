@@ -59,6 +59,7 @@
     <?php 
     include('connexionbase.php');
     session_start();
+    $_SESSION['coucou'] = "coucou2";
     if (!isset($_SESSION['id_user'])) {
         header('Location: index.php'); 
         exit();
@@ -87,6 +88,7 @@
         </div>
 
         <div class="contener_mid">
+
             <div id="body2">
                 <?php 
                 $requete1 = 'SELECT p.*, u.nom, u.prenom 
@@ -107,7 +109,7 @@
 
                     // Vérifier si un fichier GPX est associé à ce post
                     if (!empty($valeur1['gpx_id'])) {
-                        echo '<div id="map-' . $valeur1['id_post'] . '" class="map" style="height: 400px;"></div>';
+                        echo '<div id="map-' . $valeur1['id_post'] . '" class="map" style="margin-top:20px; height: 300px;"></div>';
                         echo '<script>loadGPXFile("' . $valeur1['gpx_id'] . '", "map-' . $valeur1['id_post'] . '");</script>';
                     } else {
                         echo 'Aucun fichier GPX associé';
@@ -127,7 +129,7 @@
                             if (isset($_COOKIE['uploaded_gpx_file'])) {
                                 echo '<span>Fichier GPX trouvé</span>';
                             } else {
-                                echo '<a href="gpx/index.php" target="_blank">Ajouter fichier GPX</a>';
+                                echo '<a href="gpx/index.php">Ajouter fichier GPX</a>';
                             }
                             ?>
 

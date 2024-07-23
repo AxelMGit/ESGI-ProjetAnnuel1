@@ -27,9 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['gpxFile'])) {
 
     // Si tout est correct, essayez d'uploader le fichier
     if (move_uploaded_file($_FILES["gpxFile"]["tmp_name"], $target_file)) {
-        // Enregistrer le nom du fichier dans un cookie de session
-        session_start(); // Démarrez la session si ce n'est pas déjà fait
-        setcookie('uploaded_gpx_file', $uniqueFileName, time() + (60 * 1), "/", "localhost");
+        session_start();
+        setcookie('uploaded_gpx_file', $uniqueFileName, time() + (60 * 5), "/");
         echo json_encode(['success' => true, 'file' => $uniqueFileName]);
     } else {
         $error_message = 'Erreur inconnue.';

@@ -36,6 +36,7 @@
         <label for="gpxFile">Upload GPX File:</label>
         <input type="file" name="gpxFile" id="gpxFile" accept=".gpx">
         <input type="submit" value="Upload">
+        
     </form>
     
     <div id="notification" class="notification"></div>
@@ -57,10 +58,12 @@
             var iframe = document.getElementById('uploadTarget');
             var responseText = iframe.contentDocument.body.innerText;
             try {
+                console.log(responseText);
                 var data = JSON.parse(responseText);
                 if (data.success) {
                     console.log('Fichier uploadé avec succès!');
                     loadGPXFile(data.file);
+                    window.location.href = "http://127.0.0.1/ESGI-ProjetAnnuel1/ajouter.php?#demo-modal";
                 } else {
                     console.error(data.message);
                 }
@@ -179,7 +182,7 @@
         };
         
         document.getElementById('uploadForm').addEventListener('submit', function(event) {
-           window.close();
+           //window.close();
         });
 
     </script>
